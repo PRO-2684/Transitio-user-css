@@ -1,0 +1,21 @@
+/* 演示模式插件的 CSS */
+/* Source: https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode */
+.group-user__avatar,
+.group-member-title > span,
+.group-user__name,
+.group-notice > .content,
+.message-container__avatar, .avatar-row > .avatar-white-border,
+.chat-header__title > .text-ellipsis,
+.ck-content > p,
+.chat-header__title > .text-ellipsis + span,
+.user-name > .text-ellipsis, .text-element--at, .reply-title > .reply-info > .text-ellipsis, .av-call-info > .name-text,
+.babble,
+.gray-tip-content,
+.list-item__avatar > .avatar, .list-item__avatar > .recent-contact-item__phone,
+.summary-bubble sub, .summary-bubble i,
+.summary-main > .text-ellipsis, .summary-main > span,
+.secondary-info,
+.main-info > span,
+.user-avatar {
+    filter: blur(10px);
+}
