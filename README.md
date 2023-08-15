@@ -2,6 +2,10 @@
 
 我的 [Transitio](https://github.com/PRO-2684/transitio) user css.
 
+## [demo-mode](./demo-mode.css)
+
+演示模式，来源于 https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode 。
+
 ## [hide-items](./hide-items.css)
 
 隐藏一些不需要的项目，详见源码注释。
