@@ -1,4 +1,4 @@
-/* 演示模式插件的 CSS */
+/* 演示模式：模糊化部分元素 */
 /* Source: https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode */
 .group-user__avatar,
 .group-member-title > span,
@@ -16,6 +16,7 @@
 .summary-main > .text-ellipsis, .summary-main > span,
 .secondary-info,
 .main-info > span,
+.main-info > div,
 .user-avatar {
     filter: blur(10px);
 }
