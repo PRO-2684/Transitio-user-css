@@ -1,0 +1,21 @@
+/* QQ 表情微调 */
+
+/* 使用系统 Emoji (与字体) */
+body, html {
+    font-family: system-ui, PingFang SC, PingFangSC-Regular, Microsoft YaHei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif, Apple Braille;
+}
+/* 表情建议面板宽度调小 */
+.editor-qqface-short-panel {
+    width: 140px !important;
+}
+/* 表情建议面板更为紧凑 */
+.editor-qqface-short-panel .viewport-list__inner {
+    gap: 0px;
+    padding: 0px;
+}
+.item .editor-qqface-short-panel__item {
+    margin: 0px;
+}
+.item .editor-qqface-short-panel__item .item-wrap {
+    padding: 0px;
+}
