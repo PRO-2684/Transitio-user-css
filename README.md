@@ -18,9 +18,13 @@
 
 隐藏居右的自己的头像和昵称。
 
+![hide-self](./images/hide-self.jpg)
+
 ## [highlight-at](./highlight-at.css)
 
 高亮艾特。
+
+![highlight-at](./images/highlight-at.jpg)
 
 ## [image-viewer](./image-viewer.css)
 
