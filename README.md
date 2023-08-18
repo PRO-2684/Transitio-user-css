@@ -4,7 +4,7 @@
 
 ## [all-in-one](./all-in-one.css)
 
-大杂烩：包括以下除了 `demo-mode` 外的所有样式。
+大杂烩：包括以下除了 `demo-mode` 和 `hide-self` 外的所有样式。
 
 ## [demo-mode](./demo-mode.css)
 
@@ -13,6 +13,10 @@
 ## [hide-items](./hide-items.css)
 
 隐藏一些不需要的项目，详见源码注释。
+
+## [hide-self](./hide-self.css)
+
+隐藏居右的自己的头像和昵称。
 
 ## [highlight-at](./highlight-at.css)
 
