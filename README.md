@@ -54,3 +54,7 @@ QQ 表情微调：
 添加过渡动画。
 
 ![transition](./images/transition.gif)
+
+## [transparent](./transparent.css)
+
+透明化部分元素。

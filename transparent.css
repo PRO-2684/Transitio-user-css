@@ -1,0 +1,12 @@
+/* 透明化部分元素 */
+.q-context-menu:not(.is-pure), /* 菜单 */
+.q-context-sub-menu__container:not(.is-pure), /* 子菜单 */
+.expression-panel, /* 表情面板 */
+.side-panel, /* 侧栏 */
+.q-popover, /* 弹出框 */
+.search-result { /* 搜索结果 */
+    opacity: 0.9;
+}
+.q-tooltips__content { /* 提示 */
+    opacity: 0.8;
+}
