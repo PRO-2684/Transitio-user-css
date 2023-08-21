@@ -111,6 +111,7 @@ i.q-icon {
 .search-result { /* 搜索结果 */
     opacity: 0.9;
 }
+.editor-qqface-short-panel, /* 表情建议框 */
 .q-tooltips__content { /* 提示 */
     opacity: 0.8;
 }
