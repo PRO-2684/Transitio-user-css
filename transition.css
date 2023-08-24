@@ -1,7 +1,24 @@
 /* 添加过渡动画 */
+/* 背景颜色 */
 * {
-    transition: background 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition-property: background, border, box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
 }
 i.q-icon {
-    transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition-property: color, background, border, box-shadow;
+}
+/* 左侧聊天列表的字 */
+.recent-contact-item.across-mode .list-item__title>div>span,
+.recent-contact-item.across-mode .summary-main>div {
+    transition-property: color;
+}
+.radio-tab .radio-tab__item>span { /* 好友界面的 tab */
+    transition-property: color, opacity !important;
+    transition-duration: 0.2s !important;
+    transition-timing-function: ease-in-out !important;
+}
+.operation .send { /* "发送" 按钮颜色（实际上是透明度） */
+    transition-property: background, opacity;
 }
