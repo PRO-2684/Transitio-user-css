@@ -9,6 +9,14 @@
 i.q-icon {
     transition-property: color, background, border, box-shadow;
 }
+/* 侧栏图标背景 */
+div.tab-item-mask {
+    transition-property: background, opacity;
+}
+div.tab-item-mask:hover {
+    animation: none;
+    opacity: 0.04 !important;
+}
 /* 左侧聊天列表的字 */
 .recent-contact-item.across-mode .list-item__title>div>span,
 .recent-contact-item.across-mode .summary-main>div {
