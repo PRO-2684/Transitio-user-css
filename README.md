@@ -36,6 +36,8 @@
 
 添加输入框占位符（类似于 QA 的输入框提示）：`Type words here...`
 
+![input-placeholder](./images/input-placeholder.jpg)
+
 ## [no-update-dialog](./no-update-dialog.css)
 
 隐藏更新提示。
