@@ -52,6 +52,11 @@ div.plugin-panel-main-area > div.footer {
     backdrop-filter: none;
 }
 
+/* 输入框提示 */
+.ck-placeholder:before {
+    --qq-editor-placeholder: "Type words here...";
+}
+
 /* 通过 CSS 隐藏更新提示框 */
 div.q-dialog:has(>div.update-dialog) {
     display: none;

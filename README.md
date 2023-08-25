@@ -32,6 +32,10 @@
 
 ![image-viewer](./images/image-viewer.jpg)
 
+## [input-placeholder](./input-placeholder.css)
+
+添加输入框占位符（类似于 QA 的输入框提示）：`Type words here...`
+
 ## [no-update-dialog](./no-update-dialog.css)
 
 隐藏更新提示。
