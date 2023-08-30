@@ -53,7 +53,7 @@ div.plugin-panel-main-area > div.footer {
 }
 
 /* 输入框提示 */
-.ck-placeholder:before {
+.qq-editor[style$='"";'] .ck-placeholder:before {
     --qq-editor-placeholder: "Type words here...";
 }
 

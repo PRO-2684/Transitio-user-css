@@ -1,5 +1,5 @@
 /* 输入框提示 */
 /* 灵感来源于 Telegram Theme */
-.ck-placeholder:before {
+.qq-editor[style$='"";'] .ck-placeholder:before {
     --qq-editor-placeholder: "Type words here...";
 }
