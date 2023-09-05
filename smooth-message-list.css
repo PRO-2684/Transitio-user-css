@@ -1,0 +1,19 @@
+/* 消息列表平滑插入动画 */
+
+.ml-item:first-child>div[is-scroll-in-bottom="true"] {
+    animation: added 0.15s !important;
+    /* background-color: darkred !important; */
+}
+
+@keyframes added {
+    from {
+        margin-bottom: -50px;
+        opacity: 0%;
+    }
+
+    to {
+        margin-bottom: 0;
+        opacity: 100%;
+        transform: none;
+    }
+}
