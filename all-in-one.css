@@ -7,9 +7,9 @@ div.sidebar__menu > div:nth-child(1), /* 隐藏主页下侧侧栏的第 1 个项
 div.nav-bar > div:nth-child(7) { /* 隐藏设置界面的第 7 个项目 (超级调色盘) */
     display: none !important;
 }
-div.nav.sidebar__nav > div:nth-child(4), div.nav.sidebar__nav > div:nth-child(5), /* 隐藏主页上侧侧栏的第 4, 5 个项目，通常为游戏中心和腾讯文档 */
+div.nav.sidebar__nav > div:nth-child(4), div.nav.sidebar__nav > div:nth-child(5), /* 隐藏主页上侧侧栏的第 4, 5 个项目，通常为无法隐藏的频道和游戏 */
 div.panel-header__action div.func-bar > div:nth-child(1), div.panel-header__action div.func-bar > div:nth-child(2), div.panel-header__action div.func-bar > div:nth-child(3), /* 隐藏聊天页面上侧的第 1-3 个项目 (语音通话，视频通话，屏幕共享) */
-div.chat-func-bar > div:nth-child(1) > div:nth-child(2), div.chat-func-bar > div:nth-child(1) > div:nth-child(6), /* 隐藏输入框上侧的第 2, 6 个项目 (截图，语音) */
+div.chat-func-bar > div:nth-child(1) > div:nth-child(2), div.chat-func-bar > div:nth-child(1) > div:nth-child(7), /* 隐藏输入框上侧的第 2, 7 个项目 (截图，语音) */
 div#qContextMenu.more-menu > *:nth-child(2), /* 隐藏菜单栏的第 2 个项目 (检查更新) */
 div.sticker-panel__bar div.tabs-container-item:has(i[title="GIF热图"]) { /* 隐藏表情菜单的 GIF 热图 */
     display: none;
