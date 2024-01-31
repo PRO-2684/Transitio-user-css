@@ -4,6 +4,13 @@
 body, html {
     font-family: system-ui, PingFang SC, PingFangSC-Regular, Microsoft YaHei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif, Apple Braille;
 }
+/* 最近表情面板更为紧凑 */
+.stickers.recent-used {
+    padding: 0.5em !important;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    max-width: 12em;
+}
 /* 表情建议面板宽度调小 */
 .editor-qqface-short-panel {
     width: 140px !important;
