@@ -1,5 +1,14 @@
 /* CSS 样式大杂烩 */
 
+/* 头像浮动 */
+#ml-root .ml-list {
+    overflow: unset;
+}
+#ml-root .ml-list .avatar-span {
+    position: sticky;
+    top: 1em;
+}
+
 /* 隐藏一些不需要的项目，详见源代码注释 */
 div.sidebar__menu > div:has(div.mail-item), /* 隐藏主页下侧侧栏的 QQ 邮箱 */
 div.nav-bar > div.nav-item:has(img.svip-icon) { /* 隐藏设置界面带 SVIP 的项目 (超级调色盘) */

@@ -6,6 +6,12 @@
 
 大杂烩：包括以下除了 `demo-mode` 和 `hide-self` 外的所有样式。
 
+## [avatar-float](./avatar-float.css)
+
+头像浮动。
+
+![avatar-float](./images/avatar-float.jpg)
+
 ## [demo-mode](./demo-mode.css)
 
 演示模式，来源于 https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode 。

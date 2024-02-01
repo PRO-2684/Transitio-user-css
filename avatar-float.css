@@ -1,0 +1,8 @@
+/* 头像浮动 */
+#ml-root .ml-list {
+    overflow: unset;
+}
+#ml-root .ml-list .avatar-span {
+    position: sticky;
+    top: 1em;
+}
