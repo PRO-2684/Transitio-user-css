@@ -12,6 +12,15 @@
     top: 3em;
 }
 
+/* 艾特建议面板更为紧凑 */
+.editor-at-panel {
+    width: 10em !important;
+}
+.editor-at-panel .viewport-list__inner {
+    gap: 0px;
+    padding: 0px;
+}
+
 /* 隐藏一些不需要的项目，详见源代码注释 */
 div.sidebar__menu > div:has(div.mail-item), /* 隐藏主页下侧侧栏的 QQ 邮箱 */
 div.nav-bar > div.nav-item:has(img.svip-icon) { /* 隐藏设置界面带 SVIP 的项目 (超级调色盘) */
@@ -93,7 +102,7 @@ body, html {
 }
 /* 表情建议面板宽度调小 */
 .editor-qqface-short-panel {
-    width: 140px !important;
+    width: 10em !important;
 }
 /* 表情建议面板更为紧凑 */
 .editor-qqface-short-panel .viewport-list__inner {
@@ -149,7 +158,8 @@ div.tab-item-mask:hover {
 .search-result { /* 搜索结果 */
     opacity: 0.9;
 }
-.editor-qqface-short-panel, /* 表情建议框 */
+.editor-qqface-short-panel, /* 表情建议面板 */
+.editor-at-panel, /* 艾特建议面板 */
 .q-tooltips__content { /* 提示 */
     opacity: 0.8;
 }

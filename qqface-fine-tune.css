@@ -13,7 +13,7 @@ body, html {
 }
 /* 表情建议面板宽度调小 */
 .editor-qqface-short-panel {
-    width: 140px !important;
+    width: 10em !important;
 }
 /* 表情建议面板更为紧凑 */
 .editor-qqface-short-panel .viewport-list__inner {

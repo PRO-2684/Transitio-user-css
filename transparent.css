@@ -8,6 +8,7 @@
     opacity: 0.9;
 }
 .editor-qqface-short-panel, /* 表情建议面板 */
+.editor-at-panel, /* 艾特建议面板 */
 .q-tooltips__content { /* 提示 */
     opacity: 0.8;
 }

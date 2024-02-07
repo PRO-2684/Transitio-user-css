@@ -1,0 +1,8 @@
+/* 艾特建议面板更为紧凑 */
+.editor-at-panel {
+    width: 10em !important;
+}
+.editor-at-panel .viewport-list__inner {
+    gap: 0px;
+    padding: 0px;
+}

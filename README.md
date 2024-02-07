@@ -12,6 +12,10 @@
 
 ![avatar-float](./images/avatar-float.jpg)
 
+## [compact-at-list](./compact-at-list.css)
+
+艾特建议面板更为紧凑。
+
 ## [demo-mode](./demo-mode.css)
 
 演示模式，来源于 https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode 。
