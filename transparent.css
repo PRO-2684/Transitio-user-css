@@ -4,11 +4,10 @@
 .expression-panel, /* 表情面板 */
 .side-panel, /* 侧栏 */
 .q-popover, /* 弹出框 */
-.search-result { /* 搜索结果 */
-    opacity: 0.9;
-}
+.search-result, /* 搜索结果 */
 .editor-qqface-short-panel, /* 表情建议面板 */
 .editor-at-panel, /* 艾特建议面板 */
-.q-tooltips__content { /* 提示 */
+.q-tooltips__content, /* 提示 */
+.q-notification { /* 通知 */
     opacity: 0.8;
 }
