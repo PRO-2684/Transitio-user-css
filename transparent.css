@@ -5,6 +5,9 @@
 .side-panel, /* 侧栏 */
 .q-popover, /* 弹出框 */
 .search-result, /* 搜索结果 */
+.q-dialog { /* 对话框 */
+    opacity: 0.9;
+}
 .editor-qqface-short-panel, /* 表情建议面板 */
 .editor-at-panel, /* 艾特建议面板 */
 .q-tooltips__content, /* 提示 */
