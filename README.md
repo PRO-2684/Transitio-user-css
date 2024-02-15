@@ -43,7 +43,7 @@
 
 ## [highlight-at](./highlight-at.css)
 
-高亮艾特。
+高亮艾特：将艾特显示为下划线，着色为主题色；修复选择 `<msg-at>` 元素的背景色
 
 ![highlight-at](./images/highlight-at.jpg)
 
