@@ -78,6 +78,14 @@ div.plugin-panel-main-area > div.footer {
     --qq-editor-placeholder: "Type words here...";
 }
 
+/* 链接动态颜色：悬浮/按下时显示相应颜色 */
+.text-element.text-element--other .text-element--at:hover, .text-element.text-element--other .text-link:hover, a:hover {
+    color: var(--hover-link) !important;
+}
+.text-element.text-element--other .text-element--at:active, .text-element.text-element--other .text-link:active, a:active {
+    color: var(--press-link) !important;
+}
+
 /* 通过 CSS 隐藏更新提示框 */
 div.q-dialog:has(>div.update-dialog) {
     display: none;
@@ -136,9 +144,12 @@ div.tab-item-mask:hover {
     animation: none;
     opacity: 0.04 !important;
 }
-/* 左侧聊天列表的字 */
+/* 左侧聊天列表的字; 链接/艾特 */
 .recent-contact-item.across-mode .list-item__title>div>span,
-.recent-contact-item.across-mode .summary-main>div {
+.recent-contact-item.across-mode .summary-main>div,
+a,
+.text-element .text-element--at,
+.text-element .text-link {
     transition-property: color;
 }
 .radio-tab .radio-tab__item>span { /* 好友界面的 tab */

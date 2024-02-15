@@ -17,9 +17,12 @@ div.tab-item-mask:hover {
     animation: none;
     opacity: 0.04 !important;
 }
-/* 左侧聊天列表的字 */
+/* 左侧聊天列表的字; 链接/艾特 */
 .recent-contact-item.across-mode .list-item__title>div>span,
-.recent-contact-item.across-mode .summary-main>div {
+.recent-contact-item.across-mode .summary-main>div,
+a,
+.text-element .text-element--at,
+.text-element .text-link {
     transition-property: color;
 }
 .radio-tab .radio-tab__item>span { /* 好友界面的 tab */

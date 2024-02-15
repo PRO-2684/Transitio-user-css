@@ -59,6 +59,10 @@
 
 ![input-placeholder](./images/input-placeholder.jpg)
 
+## [link-color](./link-color.css)
+
+链接动态颜色：悬浮/按下时显示相应颜色。
+
 ## [no-update-dialog](./no-update-dialog.css)
 
 隐藏更新提示。
