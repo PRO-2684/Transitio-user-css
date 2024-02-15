@@ -6,7 +6,7 @@ div.nav-bar > div.nav-item:has(img.svip-icon) { /* 隐藏设置界面带 SVIP �
 div.nav.sidebar__nav > div.nav-item[aria-label="频道"], div.nav.sidebar__nav > div.nav-item[aria-label="游戏"], /* 隐藏主页上侧侧栏的无法隐藏的频道和游戏 */
 div.bar-icon:has(#id-func-bar-telephone), div.bar-icon:has(#id-func-bar-video_on), div.bar-icon:has(#id-func-bar-share_screen), div.bar-icon:has(#id-func-bar-channel_robot), /* 隐藏聊天页面上侧的语音通话，视频通话，屏幕共享，机器人指令 */
 div.chat-func-bar > div:nth-child(1) > div.bar-icon:has(#id-func-bar-screenshot), div.chat-func-bar > div:nth-child(1) > div.bar-icon:has(#id-func-bar-microphone_on), /* 隐藏输入框上侧的截图，语音按钮 */
-div#qContextMenu.more-menu > a:has(span.setting-item-update), /* 隐藏菜单栏的检查更新 */
+div.q-context-menu.more-menu > a.q-context-menu-item:has(span.setting-item-update), /* 隐藏菜单栏的检查更新 */
 div.sticker-panel__bar div.tabs-container-item:has(i[title="GIF热图"]), /* 隐藏表情菜单的 GIF 热图 */
 div#app > div.window-control-area > div:not([role="button"]) { /* 隐藏窗口控制栏的小面板按钮 */
     display: none;
