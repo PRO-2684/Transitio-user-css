@@ -1,4 +1,5 @@
 /* 透明化部分元素 */
+.q-menu, /* 菜单 */
 .q-context-menu:not(.is-pure), /* 菜单 */
 .q-context-sub-menu__container:not(.is-pure), /* 子菜单 */
 .expression-panel, /* 表情面板 */
