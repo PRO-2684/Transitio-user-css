@@ -46,6 +46,6 @@ a,
         margin-left: 0px;
     }
 }
-.q-menu, .q-context-menu, .q-context-sub-menu__container {
+.q-menu, .q-context-menu, .q-context-sub-menu__container, .q-tooltips__content {
     animation: fadeIn 0.2s;
 }

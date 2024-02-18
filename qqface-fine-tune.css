@@ -26,3 +26,8 @@ body, html {
 .item .editor-qqface-short-panel__item .item-wrap {
     padding: 0px;
 }
+/* 更小的超级表情 */
+.lottie, .lottie > .lottie-container > canvas {
+    width: 80px !important;
+    height: 80px !important;
+}

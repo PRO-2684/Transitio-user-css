@@ -79,6 +79,7 @@ QQ 表情微调：
 
 - 使用系统 Emoji (与字体)。
 - 调整最近表情和表情建议面板大小，更为紧凑。
+- 更小的超级表情。
 
 ![qqface-fine-tune-recent](./images/qqface-fine-tune-recent.jpg)
 
