@@ -36,7 +36,7 @@ div#app > div.window-control-area > div:not([role="button"]) { /* 隐藏窗口�
 }
 
 /* 高亮艾特：将艾特显示为下划线，着色为主题色 */
-span.text-element--at {
+span.text-element--at, msg-at {
     text-decoration: underline dashed;
 }
 /* 别人发的信息，着色为链接 */
