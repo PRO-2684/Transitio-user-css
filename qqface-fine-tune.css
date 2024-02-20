@@ -27,7 +27,7 @@ body, html {
     padding: 0px;
 }
 /* 更小的超级表情 */
-.lottie, .lottie > .lottie-container > canvas {
+/* .lottie, .lottie > .lottie-container > canvas {
     width: 80px !important;
     height: 80px !important;
-}
+} */
