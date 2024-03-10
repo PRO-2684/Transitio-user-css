@@ -1,7 +1,17 @@
 /* 链接动态颜色：悬浮/按下时显示相应颜色 */
-.text-element.text-element--other .text-element--at:hover, .text-element.text-element--other .text-link:hover, a:hover {
-    color: var(--hover-link) !important;
+.text-element.text-element--other {
+    .text-element--at:hover, .text-link:hover {
+        color: var(--hover-link) !important;
+    }
+    .text-element--at:active, .text-link:active {
+        color: var(--press-link) !important;
+    }
 }
-.text-element.text-element--other .text-element--at:active, .text-element.text-element--other .text-link:active, a:active {
-    color: var(--press-link) !important;
+a {
+    &:hover {
+        color: var(--hover-link);
+    }
+    &:active {
+        color: var(--press-link);
+    }
 }

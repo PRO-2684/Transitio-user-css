@@ -14,15 +14,15 @@ body, html {
 /* 表情建议面板宽度调小 */
 .editor-qqface-short-panel {
     width: 10em !important;
-}
-/* 表情建议面板更为紧凑 */
-.editor-qqface-short-panel .viewport-list__inner {
-    gap: 0px;
-    padding: 0px;
+    /* 表情建议面板更为紧凑 */
+    .viewport-list__inner {
+        gap: 0px;
+        padding: 0px;
+    }
 }
 .item .editor-qqface-short-panel__item {
     margin: 0px;
-}
-.item .editor-qqface-short-panel__item .item-wrap {
-    padding: 0px;
+    .item-wrap {
+        padding: 0px;
+    }
 }

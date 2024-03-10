@@ -1,24 +1,26 @@
 /* CSS 样式大杂烩 */
 
 /* 头像浮动 */
-#ml-root .ml-list {
-    overflow: unset;
-}
-#ml-root .avatar-span {
-    position: sticky;
-    top: 1em;
-}
-#ml-root.record-msg-panel .avatar-span {
-    top: 3em;
+#ml-root {
+    .ml-list {
+        overflow: unset;
+    }
+    .avatar-span {
+        position: sticky;
+        top: 1em;
+    }
+    &.record-msg-panel .avatar-span {
+        top: 3em;
+    }
 }
 
 /* 艾特建议面板更为紧凑 */
 .editor-at-panel {
     width: 10em !important;
-}
-.editor-at-panel .viewport-list__inner {
-    gap: 0px;
-    padding: 0px;
+    .viewport-list__inner {
+        gap: 0px;
+        padding: 0px;
+    }
 }
 
 /* 隐藏一些不需要的项目，详见源代码注释 */
@@ -26,13 +28,26 @@ div.sidebar__menu > div:has(div.mail-item), /* 隐藏主页下侧侧栏的 QQ �
 div.nav-bar > div.nav-item:has(img.svip-icon) { /* 隐藏设置界面带 SVIP 的项目 (超级调色盘) */
     display: none !important;
 }
-div.nav.sidebar__nav > div.nav-item[aria-label="频道"], div.nav.sidebar__nav > div.nav-item[aria-label="游戏"], /* 隐藏主页上侧侧栏的无法隐藏的频道和游戏 */
-div.bar-icon:has(#id-func-bar-telephone), div.bar-icon:has(#id-func-bar-video_on), div.bar-icon:has(#id-func-bar-share_screen), div.bar-icon:has(#id-func-bar-channel_robot), /* 隐藏聊天页面上侧的语音通话，视频通话，屏幕共享，机器人指令 */
-div.chat-func-bar > div:nth-child(1) > div.bar-icon:has(#id-func-bar-screenshot), div.chat-func-bar > div:nth-child(1) > div.bar-icon:has(#id-func-bar-microphone_on), /* 隐藏输入框上侧的截图，语音按钮 */
 div.q-context-menu.more-menu > a.q-context-menu-item:has(span.setting-item-update), /* 隐藏菜单栏的检查更新 */
 div.sticker-panel__bar div.tabs-container-item:has(i[title="GIF热图"]), /* 隐藏表情菜单的 GIF 热图 */
 div#app > div.window-control-area > div:not([role="button"]) { /* 隐藏窗口控制栏的小面板按钮 */
     display: none;
+}
+div.nav.sidebar__nav > div.nav-item { /* 隐藏主页上侧侧栏的无法隐藏的频道和游戏 */
+    &[aria-label="频道"],
+    &[aria-label="游戏"] {
+        display: none;
+    }
+}
+div.bar-icon { /* 隐藏聊天页面上侧的语音通话，视频通话，屏幕共享，机器人指令；隐藏输入框上侧的截图，语音按钮 */
+    &:has(#id-func-bar-telephone),
+    &:has(#id-func-bar-video_on),
+    &:has(#id-func-bar-share_screen),
+    &:has(#id-func-bar-channel_robot),
+    &:has(#id-func-bar-screenshot),
+    &:has(#id-func-bar-microphone_on) {
+        display: none;
+    }
 }
 
 /* 高亮艾特：将艾特显示为下划线，着色为主题色 */
@@ -68,9 +83,9 @@ div.main-area__arrow-icon {
 /* 视频查看器 */
 div.plugin-panel-main-area {
     opacity: 0.4;
-}
-div.plugin-panel-main-area > div.footer {
-    backdrop-filter: none;
+    > div.footer {
+        backdrop-filter: none;
+    }
 }
 
 /* 输入框提示 */
@@ -79,11 +94,21 @@ div.plugin-panel-main-area > div.footer {
 }
 
 /* 链接动态颜色：悬浮/按下时显示相应颜色 */
-.text-element.text-element--other .text-element--at:hover, .text-element.text-element--other .text-link:hover, a:hover {
-    color: var(--hover-link) !important;
+.text-element.text-element--other {
+    .text-element--at:hover, .text-link:hover {
+        color: var(--hover-link) !important;
+    }
+    .text-element--at:active, .text-link:active {
+        color: var(--press-link) !important;
+    }
 }
-.text-element.text-element--other .text-element--at:active, .text-element.text-element--other .text-link:active, a:active {
-    color: var(--press-link) !important;
+a {
+    &:hover {
+        color: var(--hover-link);
+    }
+    &:active {
+        color: var(--press-link);
+    }
 }
 
 /* 通过 CSS 隐藏更新提示框 */
@@ -114,15 +139,19 @@ body, html {
     width: 10em !important;
 }
 /* 表情建议面板更为紧凑 */
-.editor-qqface-short-panel .viewport-list__inner {
-    gap: 0px;
-    padding: 0px;
+.editor-qqface-short-panel {
+    width: 10em !important;
+    /* 表情建议面板更为紧凑 */
+    .viewport-list__inner {
+        gap: 0px;
+        padding: 0px;
+    }
 }
 .item .editor-qqface-short-panel__item {
     margin: 0px;
-}
-.item .editor-qqface-short-panel__item .item-wrap {
-    padding: 0px;
+    .item-wrap {
+        padding: 0px;
+    }
 }
 
 /* 添加过渡动画 */
@@ -139,20 +168,28 @@ i.q-icon {
 /* 侧栏图标背景 */
 div.tab-item-mask {
     transition-property: background, opacity;
-}
-div.tab-item-mask:hover {
-    animation: none;
-    opacity: 0.04 !important;
+    &:hover {
+        animation: none;
+        opacity: 0.04 !important;
+    }
 }
 /* 左侧聊天列表的字; 链接/艾特 */
-.recent-contact-item.across-mode .list-item__title>div>span,
-.recent-contact-item.across-mode .summary-main>div,
-a,
-.text-element .text-element--at,
-.text-element .text-link {
+.recent-contact-item.across-mode { /* 左侧聊天列表的字 */
+    .list-item__title > div > span,
+    .summary-main > div {
+        transition-property: color;
+    }
+}
+.text-element { /* 链接/艾特 */
+    .text-element--at,
+    .text-link {
+        transition-property: color;
+    }
+}
+a { /* 链接 */
     transition-property: color;
 }
-.radio-tab .radio-tab__item>span { /* 好友界面的 tab */
+.radio-tab .radio-tab__item > span { /* 好友界面的 tab */
     transition-property: color, opacity !important;
     transition-duration: 0.2s !important;
     transition-timing-function: ease-in-out !important;

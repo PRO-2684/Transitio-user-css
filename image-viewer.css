@@ -14,7 +14,7 @@ div.main-area__arrow-icon {
 /* 视频查看器 */
 div.plugin-panel-main-area {
     opacity: 0.4;
-}
-div.plugin-panel-main-area > div.footer {
-    backdrop-filter: none;
+    > div.footer {
+        backdrop-filter: none;
+    }
 }

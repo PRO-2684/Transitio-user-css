@@ -4,10 +4,10 @@
     "checkbox .         status    content"
     "checkbox tips      tips      tips";
     grid-template-columns: auto 1fr calc(var(--avatar_size_2) + 8px);
-}
-.message-container.message-container--self.message-container--align-right > .avatar-span {
-    display: none;
-}
-.message-container.message-container--self.message-container--align-right > .user-name {
-    display: none;
+    > .avatar-span {
+        display: none;
+    }
+    > .user-name {
+        display: none;
+    }
 }

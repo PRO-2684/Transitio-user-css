@@ -1,11 +1,13 @@
 /* 头像浮动 */
-#ml-root .ml-list {
-    overflow: unset;
-}
-#ml-root .avatar-span {
-    position: sticky;
-    top: 1em;
-}
-#ml-root.record-msg-panel .avatar-span {
-    top: 3em;
+#ml-root {
+    .ml-list {
+        overflow: unset;
+    }
+    .avatar-span {
+        position: sticky;
+        top: 1em;
+    }
+    &.record-msg-panel .avatar-span {
+        top: 3em;
+    }
 }

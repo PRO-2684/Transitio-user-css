@@ -12,20 +12,28 @@ i.q-icon {
 /* 侧栏图标背景 */
 div.tab-item-mask {
     transition-property: background, opacity;
-}
-div.tab-item-mask:hover {
-    animation: none;
-    opacity: 0.04 !important;
+    &:hover {
+        animation: none;
+        opacity: 0.04 !important;
+    }
 }
 /* 左侧聊天列表的字; 链接/艾特 */
-.recent-contact-item.across-mode .list-item__title>div>span,
-.recent-contact-item.across-mode .summary-main>div,
-a,
-.text-element .text-element--at,
-.text-element .text-link {
+.recent-contact-item.across-mode { /* 左侧聊天列表的字 */
+    .list-item__title > div > span,
+    .summary-main > div {
+        transition-property: color;
+    }
+}
+.text-element { /* 链接/艾特 */
+    .text-element--at,
+    .text-link {
+        transition-property: color;
+    }
+}
+a { /* 链接 */
     transition-property: color;
 }
-.radio-tab .radio-tab__item>span { /* 好友界面的 tab */
+.radio-tab .radio-tab__item > span { /* 好友界面的 tab */
     transition-property: color, opacity !important;
     transition-duration: 0.2s !important;
     transition-timing-function: ease-in-out !important;
