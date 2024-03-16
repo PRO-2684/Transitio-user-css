@@ -5,7 +5,8 @@ div.nav-bar > div.nav-item:has(img.svip-icon) { /* 隐藏设置界面带 SVIP �
 }
 div.q-context-menu.more-menu > a.q-context-menu-item:has(span.setting-item-update), /* 隐藏菜单栏的检查更新 */
 div.sticker-panel__bar div.tabs-container-item:has(i[title="GIF热图"]), /* 隐藏表情菜单的 GIF 热图 */
-div#app > div.window-control-area > div:not([role="button"]) { /* 隐藏窗口控制栏的小面板按钮 */
+div#app > div.window-control-area > div:not([role="button"]), /* 隐藏窗口控制栏的小面板按钮 */
+.sidebar-tianshu-bubble { /* 隐藏聊天页面的广告 */
     display: none;
 }
 div.nav.sidebar__nav > div.nav-item { /* 隐藏主页上侧侧栏的无法隐藏的频道和游戏 */
