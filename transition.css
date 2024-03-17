@@ -60,21 +60,21 @@ a { /* 链接 */
 /* 消息动画 (Adapted from https://github.com/PRO-2684/Transitio-user-css/pull/1/commits/d81cab38e7d9a41936002ee96e830c30458895a8) */
 @keyframes message-ltr {
     from {
-        margin-left: -5em;
+        transform: translateX(-5em);
         opacity: 0%;
     }
     to {
-        margin-left: 0;
+        transform: translateX(0);
         opacity: 100%;
     }
 }
 @keyframes message-rtl {
     from {
-        margin-right: -5em;
+        transform: translateX(5em);
         opacity: 0%;
     }
     to {
-        margin-right: 0;
+        transform: translateX(0);
         opacity: 100%;
     }
 }
