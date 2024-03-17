@@ -214,6 +214,33 @@ a { /* 链接 */
 .q-menu, .q-context-menu, .q-context-sub-menu__container, .q-tooltips__content {
     animation: fadeIn 0.2s;
 }
+/* 消息动画 (Adapted from https://github.com/PRO-2684/Transitio-user-css/pull/1/commits/d81cab38e7d9a41936002ee96e830c30458895a8) */
+@keyframes message-ltr {
+    from {
+        margin-left: -5em;
+        opacity: 0%;
+    }
+    to {
+        margin-left: 0;
+        opacity: 100%;
+    }
+}
+@keyframes message-rtl {
+    from {
+        margin-right: -5em;
+        opacity: 0%;
+    }
+    to {
+        margin-right: 0;
+        opacity: 100%;
+    }
+}
+.ml-item>.message {
+    animation: message-ltr 0.15s;
+}
+.ml-item>.message:has( .message-container--align-right) {
+    animation: message-rtl 0.15s;
+}
 
 /* 透明化部分元素 */
 .q-menu, /* 菜单 */
