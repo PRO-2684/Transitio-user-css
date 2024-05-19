@@ -1,6 +1,6 @@
 # Transitio-user-css
 
-我的 [Transitio](https://github.com/PRO-2684/transitio) user css.
+[Transitio](https://github.com/PRO-2684/transitio) user css 仓库。
 
 ## [all-in-one](./all-in-one.css)
 
