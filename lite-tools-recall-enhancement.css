@@ -1,0 +1,4 @@
+/* 给 lite-tools 的撤回消息加上红色增强描边 */
+.lite-tools-recall-msg .msg-content-container{ box-shadow: rgba(255, 0, 0, 0.55) 0px 0px 9px 4px; }
+.lite-tools-recall-msg .file-message--content{ box-shadow: rgba(255, 0, 0, 0.55) 0px 0px 9px 4px; }
+.lite-tools-recall-msg .msg-preview--video{ box-shadow: rgba(255, 0, 0, 0.55) 0px 0px 9px 4px; }

@@ -1,0 +1,2 @@
+/* 隐藏侧边栏 "更多" 中倒数第四个按钮 ("锁定")，防止误触 */
+.more-menu :nth-last-child(4) { display: none !important; }

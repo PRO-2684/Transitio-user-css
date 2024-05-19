@@ -35,6 +35,10 @@
 
 若有需要，可以自行注释/删除掉相应代码。
 
+## [hide-lock](./hide-lock.css)
+
+隐藏侧边栏 "更多" 中倒数第四个按钮 ("锁定")，防止误触。(By @Shapaper233, [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2119115010))
+
 ## [hide-self](./hide-self.css)
 
 隐藏居右的自己的头像和昵称。
@@ -62,6 +66,10 @@
 ## [link-color](./link-color.css)
 
 链接动态颜色：悬浮/按下时显示相应颜色。
+
+## [lite-tools-recall-enhancement](./lite-tools-recall-enhancement.css)
+
+给 lite-tools 的撤回消息加上红色增强描边。(By @Shapaper233, [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2119115010))
 
 ## [no-update-dialog](./no-update-dialog.css)
 
