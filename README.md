@@ -4,7 +4,20 @@
 
 ## [all-in-one](./all-in-one.css)
 
-大杂烩：包括以下除了 `demo-mode` 和 `hide-self` 外的所有样式。
+大杂烩：包括以下这些样式
+
+- [avatar-float](#avatar-float)
+- [compact-at-list](#compact-at-list)
+- [hide-items](#hide-items)
+- [highlight-at](#highlight-at)
+- [image-viewer](#image-viewer)
+- [input-placeholder](#input-placeholder)
+- [link-color](#link-color)
+- [no-update-dialog](#no-update-dialog)
+- [no-update-dot](#no-update-dot)
+- [qqface-fine-tune](#qqface-fine-tune)
+- [transition](#transition)
+- [transparent](#transparent)
 
 ## [avatar-float](./avatar-float.css)
 
