@@ -79,8 +79,8 @@ a { /* 链接 */
     }
 }
 .ml-item>.message {
-    animation: message-ltr 0.15s;
+    animation: message-ltr 0.2s cubic-bezier(.56,-0.37,.46,1.58); /*From：Shapaper 添加贝塞尔曲线动效，使消息进入Q弹*/
 }
 .ml-item>.message:has( .message-container--align-right) {
-    animation: message-rtl 0.15s;
+    animation: message-rtl 0.2s cubic-bezier(.56,-0.37,.46,1.58);/*From：Shapaper 添加贝塞尔曲线动效，使消息进入Q弹*/
 }
