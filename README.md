@@ -39,6 +39,9 @@
 
 隐藏侧边栏 "更多" 中倒数第四个按钮 ("锁定")，防止误触。(By [@Shapaper233](https://github.com/Shapaper233), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2119115010))
 
+**![image](https://github.com/PRO-2684/Transitio-user-css/assets/157946924/67a35135-69ce-461b-9b41-348a1cbd3b4e)**
+**--->![image](https://github.com/PRO-2684/Transitio-user-css/assets/157946924/d00a405c-b556-4c37-a9e1-1f1aede8f7d7)**
+
 ## [hide-self](./hide-self.css)
 
 隐藏居右的自己的头像和昵称。
@@ -70,6 +73,13 @@
 ## [lite-tools-recall-enhancement](./lite-tools-recall-enhancement.css)
 
 给 lite-tools 的撤回消息加上红色增强描边。(By [@Shapaper233](https://github.com/Shapaper233), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2119115010))
+
+包括但不限于自己的消息，群消息，私聊消息，撤回文件，撤回视频，撤回卡片等
+
+**除红色描边外，字体颜色为lite-tools自带功能，在lite-tools插件设置中将撤回消息字体颜色调为红色即可达到图片效果**
+
+![995d1ee03664c8f9bb0479c463378225](https://github.com/PRO-2684/Transitio-user-css/assets/157946924/22149ce4-261d-4b3a-ad78-b93709c320b2)
+
 
 ## [no-update-dialog](./no-update-dialog.css)
 
