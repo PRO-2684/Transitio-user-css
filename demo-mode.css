@@ -1,4 +1,11 @@
-/* 演示模式：模糊化部分元素 */
+/* ==UserStyle==
+@name           Demo Mode
+@description    演示模式：模糊化部分元素
+@preprocessor   transitio
+@version        0.1.0
+@author         PRO-2684
+@license     	gpl-3.0
+==/UserStyle== */
 /* Source: https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode */
 .group-user__avatar,
 .group-member-title > span,

@@ -1,4 +1,11 @@
-/* 透明化部分元素 */
+/* ==UserStyle==
+@name           Transparent
+@description    透明化部分元素
+@preprocessor   transitio
+@version        0.1.0
+@author         PRO-2684
+@license     	gpl-3.0
+==/UserStyle== */
 .q-menu, /* 菜单 */
 .q-context-menu:not(.is-pure), /* 菜单 */
 .q-context-sub-menu__container:not(.is-pure), /* 子菜单 */

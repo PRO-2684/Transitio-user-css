@@ -1,4 +1,11 @@
-/* 头像浮动 */
+/* ==UserStyle==
+@name           Avatar Float
+@description    头像浮动
+@preprocessor   transitio
+@version        0.1.0
+@author         PRO-2684
+@license     	gpl-3.0
+==/UserStyle== */
 #ml-root {
     .ml-list {
         overflow: unset;

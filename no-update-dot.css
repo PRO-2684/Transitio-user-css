@@ -1,4 +1,11 @@
-/* 隐藏 QQ 版本更新小红点 */
+/* ==UserStyle==
+@name           No Update Dot
+@description    隐藏 QQ 版本更新小红点
+@preprocessor   transitio
+@version        0.1.0
+@author         PRO-2684
+@license     	gpl-3.0
+==/UserStyle== */
 sub.q-badge-sub.q-badge-dot.q-badge-dot__small.q-badge__red {
     display: none;
 }

@@ -1,2 +1,9 @@
-/* 隐藏侧边栏 "更多" 中倒数第四个按钮 ("锁定")，防止误触 */
+/* ==UserStyle==
+@name           Hide Lock
+@description    隐藏侧边栏 "更多" 中倒数第四个按钮 ("锁定")，防止误触
+@preprocessor   transitio
+@version        0.1.0
+@author         Shapaper233
+==/UserStyle== */
+/*  */
 .more-menu :nth-last-child(4) { display: none !important; }

@@ -1,5 +1,11 @@
-/* 媒体查看器透明度修改 */
-
+/* ==UserStyle==
+@name           Image Viewer
+@description    媒体查看器透明度修改
+@preprocessor   transitio
+@version        0.1.0
+@author         PRO-2684
+@license     	gpl-3.0
+==/UserStyle== */
 /* 图片查看器 */
 div.main-area__footer {
     backdrop-filter: none;

@@ -1,4 +1,11 @@
-/* 隐藏居右的自己的头像和昵称 */
+/* ==UserStyle==
+@name           Hide Self
+@description    隐藏居右的自己的头像和昵称
+@preprocessor   transitio
+@version        0.1.0
+@author         PRO-2684
+@license     	gpl-3.0
+==/UserStyle== */
 .message-container.message-container--self.message-container--align-right {
     grid-template-areas:
     "checkbox .         status    content"

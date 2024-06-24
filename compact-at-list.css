@@ -1,4 +1,11 @@
-/* 艾特建议面板更为紧凑 */
+/* ==UserStyle==
+@name           Compact At List
+@description    艾特建议面板更为紧凑
+@preprocessor   transitio
+@version        0.1.0
+@author         PRO-2684
+@license     	gpl-3.0
+==/UserStyle== */
 .editor-at-panel {
     width: 10em !important;
     .viewport-list__inner {

@@ -1,4 +1,11 @@
-/* 高亮艾特：将艾特显示为下划线，着色为主题色；修复选择 <msg-at> 元素的背景色 */
+/* ==UserStyle==
+@name           Highlight At
+@description    高亮艾特：将艾特显示为下划线，着色为主题色；修复选择 <msg-at> 元素的背景色
+@preprocessor   transitio
+@version        0.1.0
+@author         PRO-2684
+@license     	gpl-3.0
+==/UserStyle== */
 span.text-element--at, msg-at {
     text-decoration: underline dashed;
 }

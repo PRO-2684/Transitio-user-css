@@ -1,5 +1,11 @@
-/* QQ 表情微调 */
-
+/* ==UserStyle==
+@name           QQ Face Fine Tune
+@description    QQ 表情微调
+@preprocessor   transitio
+@version        0.1.0
+@author         PRO-2684
+@license     	gpl-3.0
+==/UserStyle== */
 /* 使用系统 Emoji (与字体) */
 body, html {
     font-family: system-ui, PingFang SC, PingFangSC-Regular, Microsoft YaHei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif, Apple Braille;

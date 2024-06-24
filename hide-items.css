@@ -1,4 +1,11 @@
-/* 隐藏一些不需要的项目，详见源代码注释 */
+/* ==UserStyle==
+@name           Hide Items
+@description    隐藏一些不需要的项目，详见源代码注释
+@preprocessor   transitio
+@version        0.1.0
+@author         PRO-2684
+@license     	gpl-3.0
+==/UserStyle== */
 div.sidebar__menu > div:has(div.mail-item), /* 隐藏主页下侧侧栏的 QQ 邮箱 */
 div.nav-bar > div.nav-item:has(img.svip-icon) { /* 隐藏设置界面带 SVIP 的项目 (超级调色盘) */
     display: none !important;
