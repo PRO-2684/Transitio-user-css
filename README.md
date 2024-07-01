@@ -52,13 +52,13 @@
 
 ## [image-viewer](./image-viewer.css)
 
-媒体查看器透明度修改。
+媒体查看器透明度修改。可自定义透明度。
 
 ![image-viewer](./images/image-viewer.jpg)
 
 ## [input-placeholder](./input-placeholder.css)
 
-添加输入框占位符（类似于 QA 的输入框提示）：`Type words here...`
+添加可自定义的输入框占位符（类似于 QA 的输入框提示）：`Type words here...`
 
 ![input-placeholder](./images/input-placeholder.jpg)
 
@@ -100,10 +100,10 @@ QQ 表情微调：
 
 ## [transition](./transition.css)
 
-添加过渡动画。
+添加过渡动画。可自定义过渡时间。
 
 ![transition](./images/transition.gif)
 
 ## [transparent](./transparent.css)
 
-透明化部分元素。
+透明化部分元素。可自定义透明度。
