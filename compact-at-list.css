@@ -5,9 +5,10 @@
 @version        0.1.0
 @author         PRO-2684
 @license     	gpl-3.0
+@var number panel-width "面板宽度 (em)" "10, 1, 20, 0.5"
 ==/UserStyle== */
 .editor-at-panel {
-    width: 10em !important;
+    width: var(--panel-width)em !important;
     .viewport-list__inner {
         gap: 0px;
         padding: 0px;

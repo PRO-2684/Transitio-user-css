@@ -5,6 +5,8 @@
 @version        0.1.0
 @author         PRO-2684
 @license     	gpl-3.0
+@var number top-offset-1 "顶部偏移 (em)" "1, 0.1, +Infinity, 0.1"
+@var number top-offset-2 "聊天记录顶部偏移 (em)" "3, 0.1, +Infinity, 0.1"
 ==/UserStyle== */
 #ml-root {
     .ml-list {
@@ -12,9 +14,9 @@
     }
     .avatar-span {
         position: sticky;
-        top: 1em;
+        top: var(--top-offset-1)em;
     }
     &.record-msg-panel .avatar-span {
-        top: 3em;
+        top: var(--top-offset-2)em;
     }
 }

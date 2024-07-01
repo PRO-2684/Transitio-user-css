@@ -5,6 +5,7 @@
 @version        0.1.0
 @author         PRO-2684
 @license     	gpl-3.0
+@var number opacity "透明度" "0.4, 0.1, 1, 0.1"
 ==/UserStyle== */
 /* 图片查看器 */
 div.main-area__footer {
@@ -19,7 +20,7 @@ div.main-area__arrow-icon {
 }
 /* 视频查看器 */
 div.plugin-panel-main-area {
-    opacity: 0.4;
+    opacity: var(--opacity);
     > div.footer {
         backdrop-filter: none;
     }

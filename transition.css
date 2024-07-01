@@ -5,11 +5,12 @@
 @version        0.1.0
 @author         PRO-2684
 @license     	gpl-3.0
+@var number duration "过渡时间 (s)" "0.2, 0.01, 2, 0.01"
 ==/UserStyle== */
 /* 背景颜色 */
 * {
     transition-property: background, border, box-shadow;
-    transition-duration: 0.2s;
+    transition-duration: var(--duration)s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
 }
@@ -42,7 +43,7 @@ a { /* 链接 */
 }
 .radio-tab .radio-tab__item > span { /* 好友界面的 tab */
     transition-property: color, opacity !important;
-    transition-duration: 0.2s !important;
+    transition-duration: var(--duration)s !important;
     transition-timing-function: ease-in-out !important;
 }
 .operation .send { /* "发送" 按钮颜色（实际上是透明度） */
@@ -62,7 +63,7 @@ a { /* 链接 */
     }
 }
 .q-menu, .q-context-menu, .q-context-sub-menu__container, .q-tooltips__content {
-    animation: fadeIn 0.2s;
+    animation: fadeIn var(--duration)s;
 }
 /* 消息动画 (Adapted from https://github.com/PRO-2684/Transitio-user-css/pull/1/commits/d81cab38e7d9a41936002ee96e830c30458895a8) */
 @keyframes message-ltr {
@@ -86,8 +87,8 @@ a { /* 链接 */
     }
 }
 .ml-item>.message {
-    animation: message-ltr 0.2s cubic-bezier(.56,-0.37,.46,1.58); /*From：Shapaper 添加贝塞尔曲线动效，使消息进入Q弹*/
+    animation: message-ltr var(--duration)s cubic-bezier(.56,-0.37,.46,1.58); /*From：Shapaper 添加贝塞尔曲线动效，使消息进入Q弹*/
 }
 .ml-item>.message:has( .message-container--align-right) {
-    animation: message-rtl 0.2s cubic-bezier(.56,-0.37,.46,1.58);/*From：Shapaper 添加贝塞尔曲线动效，使消息进入Q弹*/
+    animation: message-rtl var(--duration)s cubic-bezier(.56,-0.37,.46,1.58);/*From：Shapaper 添加贝塞尔曲线动效，使消息进入Q弹*/
 }

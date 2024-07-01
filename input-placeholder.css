@@ -5,8 +5,9 @@
 @version        0.1.0
 @author         PRO-2684
 @license     	gpl-3.0
-==/UserStyle== *//*  */
+@var text placeholder "输入框提示" "Type words here..."
+==/UserStyle== */
 /* 灵感来源于 Telegram Theme */
 .qq-editor[style$='"";'] .ck-placeholder:before {
-    --qq-editor-placeholder: "Type words here...";
+    --qq-editor-placeholder: var(--placeholder);
 }

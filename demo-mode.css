@@ -5,6 +5,7 @@
 @version        0.1.0
 @author         PRO-2684
 @license     	gpl-3.0
+@var number blur-radius "模糊半径 (px)" "10, 1"
 ==/UserStyle== */
 /* Source: https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode */
 .group-user__avatar,
@@ -25,5 +26,5 @@
 .main-info > span,
 .main-info > div,
 .user-avatar {
-    filter: blur(10px);
+    filter: blur(var(--blur-radius)px);
 }

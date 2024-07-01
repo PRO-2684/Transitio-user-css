@@ -2,23 +2,6 @@
 
 [Transitio](https://github.com/PRO-2684/transitio) user css 仓库。
 
-## [all-in-one](./all-in-one.css)
-
-大杂烩：包括以下这些样式
-
-- [avatar-float](#avatar-float)
-- [compact-at-list](#compact-at-list)
-- [hide-items](#hide-items)
-- [highlight-at](#highlight-at)
-- [image-viewer](#image-viewer)
-- [input-placeholder](#input-placeholder)
-- [link-color](#link-color)
-- [no-update-dialog](#no-update-dialog)
-- [no-update-dot](#no-update-dot)
-- [qqface-fine-tune](#qqface-fine-tune)
-- [transition](#transition)
-- [transparent](#transparent)
-
 ## [avatar-float](./avatar-float.css)
 
 头像浮动。

@@ -5,6 +5,8 @@
 @version        0.1.0
 @author         PRO-2684
 @license     	gpl-3.0
+@var number opacity-1 "透明度 1" "0.9, 0.1, 1, 0.1"
+@var number opacity-2 "透明度 2" "0.8, 0.1, 1, 0.1"
 ==/UserStyle== */
 .q-menu, /* 菜单 */
 .q-context-menu:not(.is-pure), /* 菜单 */
@@ -14,11 +16,11 @@
 .q-popover, /* 弹出框 */
 .search-result, /* 搜索结果 */
 .q-dialog { /* 对话框 */
-    opacity: 0.9;
+    opacity: var(--opacity-1);
 }
 .editor-qqface-short-panel, /* 表情建议面板 */
 .editor-at-panel, /* 艾特建议面板 */
 .q-tooltips__content, /* 提示 */
 .q-notification { /* 通知 */
-    opacity: 0.8;
+    opacity: var(--opacity-2);
 }
