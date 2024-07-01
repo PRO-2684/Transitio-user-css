@@ -2,7 +2,7 @@
 @name           Transparent
 @description    透明化部分元素
 @preprocessor   transitio
-@version        0.1.0
+@version        0.1.1
 @author         PRO-2684
 @license     	gpl-3.0
 @var number opacity-1 "透明度 1" "0.9, 0.1, 1, 0.1"
@@ -21,6 +21,7 @@
 .editor-qqface-short-panel, /* 表情建议面板 */
 .editor-at-panel, /* 艾特建议面板 */
 .q-tooltips__content, /* 提示 */
-.q-notification { /* 通知 */
+.q-notification, /* 通知 */
+.q-float-card { /* 浮动卡片 (QQ 机器人指令) */
     opacity: var(--opacity-2);
 }

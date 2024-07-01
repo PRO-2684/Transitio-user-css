@@ -2,7 +2,7 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.1.0
+@version        0.1.1
 @author         PRO-2684
 @license     	gpl-3.0
 @var number duration "过渡时间 (s)" "0.2, 0.01, 2, 0.01"
@@ -62,7 +62,7 @@ a { /* 链接 */
         margin-left: 0px;
     }
 }
-.q-menu, .q-context-menu, .q-context-sub-menu__container, .q-tooltips__content {
+.q-menu, .q-context-menu, .q-context-sub-menu__container, .q-tooltips__content, .q-float-card {
     animation: fadeIn var(--duration)s;
 }
 /* 消息动画 (Adapted from https://github.com/PRO-2684/Transitio-user-css/pull/1/commits/d81cab38e7d9a41936002ee96e830c30458895a8) */
@@ -86,9 +86,10 @@ a { /* 链接 */
         opacity: 100%;
     }
 }
-.ml-item>.message {
-    animation: message-ltr var(--duration)s cubic-bezier(.56,-0.37,.46,1.58); /*From：Shapaper 添加贝塞尔曲线动效，使消息进入Q弹*/
-}
-.ml-item>.message:has( .message-container--align-right) {
-    animation: message-rtl var(--duration)s cubic-bezier(.56,-0.37,.46,1.58);/*From：Shapaper 添加贝塞尔曲线动效，使消息进入Q弹*/
+.ml-item>.message { /* @Shapaper: 添加贝塞尔曲线动效，使消息进入 Q 弹 */
+    animation: message-ltr var(--duration)s cubic-bezier(.56,-0.37,.46,1.58);
+
+    &:has( .message-container--align-right) {
+        animation-name: message-rtl;
+    }
 }
