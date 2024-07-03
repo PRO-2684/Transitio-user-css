@@ -2,29 +2,31 @@
 @name           Demo Mode
 @description    演示模式：模糊化部分元素
 @preprocessor   transitio
-@version        0.1.0
+@version        0.1.1
 @author         PRO-2684
 @license     	gpl-3.0
 @var number blur-radius "模糊半径 (px)" "10, 1"
 ==/UserStyle== */
-/* Source: https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode */
+/* Adapted from: https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode */
 .group-user__avatar,
 .group-member-title > span,
 .group-user__name,
 .group-notice > .content,
+.group-box__container .group-user__label > :is(.level, .title),
 .message-container__avatar, .avatar-row > .avatar-white-border,
-.chat-header__title > .text-ellipsis,
+.chat-header__contact-name > #chatHeaderContactName,
+/* .message-content__wrapper :is(.text-element, .face-element, .market-face-element, .pic-element, .video-element, .file-element, .reply-element, .markdown-element, .inline-keyboard-element, .forward-msg, .av-msg, .ark-view-message), */
 .ck-content > p,
-.chat-header__title > .text-ellipsis + span,
+.chat-header__contact-name > #chatHeaderMembersCount,
 .user-name > .text-ellipsis, .text-element--at, .reply-title > .reply-info > .text-ellipsis, .av-call-info > .name-text,
 .babble,
+.message-container .group-member-label > :is(.level, .title),
 .gray-tip-content,
-.list-item__avatar > .avatar, .list-item__avatar > .recent-contact-item__phone,
-.summary-bubble sub, .summary-bubble i,
-.summary-main > .text-ellipsis, .summary-main > span,
-.secondary-info,
-.main-info > span,
-.main-info > div,
+.list-item__avatar > :is(.avatar, .recent-contact-item__phone),
+.summary-bubble > :is(div, sub, i),
+.summary-main.text-ellipsis,
+.secondary-info.text-ellipsis > span,
+.list-item__container > .list-item__content > .list-item__info > .list-item__title > .main-info.text-ellipsis > :is(.text-ellipsis, .member-count),
 .user-avatar {
     filter: blur(var(--blur-radius)px);
 }
