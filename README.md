@@ -16,6 +16,10 @@
 
 演示模式，来源于 https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode 。
 
+## [hide-emoticon-response](./hide-emoticon-response.css)
+
+移除右键消息上的表情回应。(By [InfSein](https://github.com/InfSein), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2207904703))
+
 ## [hide-items](./hide-items.css)
 
 隐藏一些不需要的项目：
@@ -37,10 +41,6 @@
 
 **![image](https://github.com/PRO-2684/Transitio-user-css/assets/157946924/67a35135-69ce-461b-9b41-348a1cbd3b4e)**
 **--->![image](https://github.com/PRO-2684/Transitio-user-css/assets/157946924/d00a405c-b556-4c37-a9e1-1f1aede8f7d7)**
-
-## [hide-menu-stickers](./hide-menu-stickers.css)
-
-移除右键消息上方的添加表情按钮组。(By [InfSein](https://github.com/InfSein), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2207904703))
 
 ## [hide-self](./hide-self.css)
 
