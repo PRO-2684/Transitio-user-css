@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name           Hide Menu Stickers
+@description    移除右键消息上方的添加表情按钮组
+@preprocessor   transitio
+@version        0.1.0
+@author         InfSein
+@license     	gpl-3.0
+==/UserStyle== */
+/* Source: https://github.com/PRO-2684/transitio/issues/4#issuecomment-2207904703 */
+.menu-stickers-wrapper {
+    display: none;
+}
