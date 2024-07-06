@@ -3,6 +3,7 @@
 @description    添加过渡动画
 @preprocessor   transitio
 @version        0.1.1
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
 @var number duration "过渡时间 (s)" "0.2, 0.01, 2, 0.01"

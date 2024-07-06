@@ -3,6 +3,7 @@
 @description    给 lite-tools 的撤回消息加上红色增强描边
 @preprocessor   transitio
 @version        0.1.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#lite-tools-recall-enhancement
 @author         Shapaper233
 ==/UserStyle== */
 .lite-tools-recall-msg .msg-content-container{ box-shadow: rgba(255, 0, 0, 0.55) 0px 0px 9px 4px; }
