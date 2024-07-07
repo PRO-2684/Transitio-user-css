@@ -91,6 +91,10 @@
 
 ![no-update-dot](./images/no-update-dot.jpg)
 
+## [q-tag-enhancement](./q-tag-enhancement.css)
+
+给 qq 的各种头衔添加对应颜色的高光。(By [@Shapaper233](https://github.com/Shapaper233), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2212343133))
+
 ## [qqface-fine-tune](./qqface-fine-tune.css)
 
 QQ 表情微调：
@@ -111,3 +115,7 @@ QQ 表情微调：
 ## [transparent](./transparent.css)
 
 透明化部分元素。可自定义透明度。
+
+## [variable-fonts-fix](./variable-fonts-fix.css)
+
+给可变字体添加一定的字宽，使用前请确保 litetools 自定义字体使用的是可变字体（可自助更改）。(By [@Shapaper233](https://github.com/Shapaper233), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2212343133))

@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           Variable Fonts Fix
+@description    给可变字体添加一定的字宽，使用前请确保 litetools 自定义字体使用的是可变字体（可自助更改）
+@preprocessor   transitio
+@version        0.1.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#variable-fonts-fix
+@author         Shapaper
+@license     	gpl-3.0
+@var number opacity-1 "字宽" "540"
+==/UserStyle== */
+/* Source: https://github.com/PRO-2684/transitio/issues/4#issuecomment-2212343133 */
+body {
+    font-weight: var(--opacity-1);
+}
