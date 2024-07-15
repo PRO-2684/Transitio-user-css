@@ -13,8 +13,8 @@
 .q-tag--purple.group-user__label {box-shadow: rgb(194 123 255 / var(--box-shadow-opacity)) 0px 0px 6px 2px}
 .q-tag--grey.group-user__label {box-shadow: rgb(226 226 226 / var(--box-shadow-opacity)) 0px 0px 6px 2px}
 
-.q-tag--orange.group-member-label:not(.group-user__label) {box-shadow: rgb(237 213 195 / var(--box-shadow-opacity)) 0px 0px 4px 1px}
-.q-tag--blue.group-member-label:not(.group-user__label) {box-shadow: rgb(186 217 237 / var(--box-shadow-opacity)) 0px 0px 4px 1px}
+.q-tag--orange.group-member-label:not(.group-user__label) {box-shadow: rgb(255 147 73 / var(--box-shadow-opacity)) 0px 0px 4px 1px}
+.q-tag--blue.group-member-label:not(.group-user__label) {box-shadow: rgb(57 123 172 / var(--box-shadow-opacity)) 0px 0px 4px 1px}
 .q-tag--purple.group-member-label:not(.group-user__label) {box-shadow: rgb(194 123 255 / var(--box-shadow-opacity)) 0px 0px 4px 1px}
 .q-tag--grey.group-member-label:not(.group-user__label) {box-shadow: rgb(226 226 226 / var(--box-shadow-opacity)) 0px 0px 4px 1px}
 
