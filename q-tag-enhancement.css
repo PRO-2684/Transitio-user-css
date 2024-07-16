@@ -2,11 +2,11 @@
 @name           q-tag-enhancement
 @description    给qq的各种头衔添加对应颜色的高光
 @preprocessor   transitio
-@version        0.1.0
+@version        0.1.1
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#q-tag-enhancement
-@author         Shapaper
+@author         Shapaper, huoyan1231
 @license     	gpl-3.0
-@var number box-shadow-opacity "高光透明度" "80"
+@var number     box-shadow-opacity "高光透明度" "80"
 ==/UserStyle== */
 .q-tag--orange.group-user__label {box-shadow: rgb(255 147 73 / var(--box-shadow-opacity)) 0px 0px 6px 2px}
 .q-tag--blue.group-user__label {box-shadow: rgb(57 123 172 / var(--box-shadow-opacity)) 0px 0px 6px 2px}
