@@ -12,6 +12,10 @@
 
 艾特建议面板更为紧凑。
 
+## [customize-more-menu](./customize-more-menu.css)
+
+自定义隐藏主界面更多菜单中至多三个不需要的项目，需自行设置要隐藏的项目序号 (默认设置的序号过大，故不会隐藏任何项目)。注意：数序号时需算上通过其它样式隐藏的项目。
+
 ## [demo-mode](./demo-mode.css)
 
 演示模式，来源于 https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode 。
@@ -32,6 +36,7 @@
 - 菜单栏的检查更新
 - 表情菜单的 GIF 热图
 - 窗口控制栏的小面板按钮
+- 左上角的 QQ Logo
 
 若有需要，可以自行注释/删除掉相应代码。
 
