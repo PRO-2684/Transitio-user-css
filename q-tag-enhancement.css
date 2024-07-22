@@ -2,21 +2,26 @@
 @name           q-tag-enhancement
 @description    给qq的各种头衔添加对应颜色的高光
 @preprocessor   transitio
-@version        0.1.1
+@version        0.1.2
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#q-tag-enhancement
-@author         Shapaper, huoyan1231
+@author         Shapaper, huoyan1231, PRO-2684
 @license     	gpl-3.0
-@var number     box-shadow-opacity "高光透明度" "80"
+@var number box-shadow-opacity "高光透明度" "0.8, 0, 1, 0.01"
+@var color owner-color "群主颜色 (rgb)" "#FF9349"
+@var color admin-color "管理员颜色 (rgb)" "#397BAC"
+@var color special-color "专属头衔颜色 (rgb)" "#C27BFF"
+@var color bot-color "bot 颜色 (rgb)" "#0A64FF"
+@var color others-color "普通群成员颜色 (rgb)" "#E2E2E2"
 ==/UserStyle== */
-.q-tag--orange.group-user__label {box-shadow: rgb(255 147 73 / var(--box-shadow-opacity)) 0px 0px 6px 2px}
-.q-tag--blue.group-user__label {box-shadow: rgb(57 123 172 / var(--box-shadow-opacity)) 0px 0px 6px 2px}
-.q-tag--purple.group-user__label {box-shadow: rgb(194 123 255 / var(--box-shadow-opacity)) 0px 0px 6px 2px}
-.q-tag--grey.group-user__label {box-shadow: rgb(226 226 226 / var(--box-shadow-opacity)) 0px 0px 6px 2px}
+.q-tag--orange.group-user__label {box-shadow: rgb(from var(--owner-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
+.q-tag--blue.group-user__label {box-shadow: rgb(from var(--admin-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
+.q-tag--purple.group-user__label {box-shadow: rgb(from var(--special-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
+.q-tag--grey.group-user__label {box-shadow: rgb(from var(--others-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
 
-.q-tag--orange.group-member-label:not(.group-user__label) {box-shadow: rgb(255 147 73 / var(--box-shadow-opacity)) 0px 0px 4px 1px}
-.q-tag--blue.group-member-label:not(.group-user__label) {box-shadow: rgb(57 123 172 / var(--box-shadow-opacity)) 0px 0px 4px 1px}
-.q-tag--purple.group-member-label:not(.group-user__label) {box-shadow: rgb(194 123 255 / var(--box-shadow-opacity)) 0px 0px 4px 1px}
-.q-tag--grey.group-member-label:not(.group-user__label) {box-shadow: rgb(226 226 226 / var(--box-shadow-opacity)) 0px 0px 4px 1px}
+.q-tag--orange.group-member-label:not(.group-user__label) {box-shadow: rgb(from var(--owner-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px}
+.q-tag--blue.group-member-label:not(.group-user__label) {box-shadow: rgb(from var(--admin-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px}
+.q-tag--purple.group-member-label:not(.group-user__label) {box-shadow: rgb(from var(--special-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px}
+.q-tag--grey.group-member-label:not(.group-user__label) {box-shadow: rgb(from var(--others-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px}
 
-.qq-bot-label.group-user__bot {box-shadow: rgb(10 100 255 / var(--box-shadow-opacity)) 0px 0px 6px 2px}
-.qq-bot-label:not(.group-user__bot) {box-shadow: rgb(10 100 255 / var(--box-shadow-opacity)) 0px 0px 6px 1px}
+.qq-bot-label.group-user__bot {box-shadow: rgb(from var(--bot-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
+.qq-bot-label:not(.group-user__bot) {box-shadow: rgb(from var(--bot-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 1px}
