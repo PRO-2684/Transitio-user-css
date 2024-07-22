@@ -7,11 +7,11 @@
 @author         Shapaper, huoyan1231, PRO-2684
 @license     	gpl-3.0
 @var number box-shadow-opacity "高光透明度" "0.8, 0, 1, 0.01"
-@var color owner-color "群主颜色 (rgb)" "#FF9349"
-@var color admin-color "管理员颜色 (rgb)" "#397BAC"
-@var color special-color "专属头衔颜色 (rgb)" "#C27BFF"
-@var color bot-color "bot 颜色 (rgb)" "#0A64FF"
-@var color others-color "普通群成员颜色 (rgb)" "#E2E2E2"
+@var color owner-color "群主颜色" "#FF9349"
+@var color admin-color "管理员颜色" "#397BAC"
+@var color special-color "专属头衔颜色" "#C27BFF"
+@var color bot-color "bot 颜色" "#0A64FF"
+@var color others-color "普通群成员颜色" "#E2E2E2"
 ==/UserStyle== */
 .q-tag--orange.group-user__label, .primary.q-tag.member-role-tag {box-shadow: rgb(from var(--owner-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
 .q-tag--blue.group-user__label, .q-tag.member-role-tag {box-shadow: rgb(from var(--admin-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
