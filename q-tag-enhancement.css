@@ -2,11 +2,11 @@
 @name           q-tag-enhancement
 @description    给qq的各种头衔添加对应颜色的高光
 @preprocessor   transitio
-@version        0.1.3
+@version        0.1.4
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#q-tag-enhancement
 @author         Shapaper, huoyan1231, PRO-2684
 @license     	gpl-3.0
-@var number box-shadow-opacity "高光透明度" "0.8, 0, 1, 0.01"
+@var percent box-shadow-opacity "高光透明度 (%)" "80"
 @var color owner-color "群主颜色" "#FF9349"
 @var color admin-color "管理员颜色" "#397BAC"
 @var color special-color "专属头衔颜色" "#C27BFF"
