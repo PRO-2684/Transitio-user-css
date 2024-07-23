@@ -2,11 +2,11 @@
 @name           Image Viewer
 @description    媒体查看器透明度修改
 @preprocessor   transitio
-@version        0.1.0
+@version        0.1.1
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#image-viewer
 @author         PRO-2684
 @license     	gpl-3.0
-@var number opacity "透明度" "0.4, 0.1, 1, 0.1"
+@var percent opacity "透明度" "40"
 ==/UserStyle== */
 /* 图片查看器 */
 div.main-area__footer {
