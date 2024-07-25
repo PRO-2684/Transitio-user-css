@@ -1,29 +1,94 @@
 /* ==UserStyle==
 @name           q-tag-enhancement
-@description    给qq的各种头衔添加对应颜色的高光
+@description    给 qq 的各种头衔添加对应颜色的高光，同时控制头衔的显示/隐藏
 @preprocessor   transitio
-@version        0.1.4
+@version        0.2.0
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#q-tag-enhancement
 @author         Shapaper, huoyan1231, PRO-2684
 @license     	gpl-3.0
 @var percent box-shadow-opacity "高光透明度 (%)" "80"
-@var color owner-color "群主颜色" "#FF9349"
-@var color admin-color "管理员颜色" "#397BAC"
-@var color special-color "专属头衔颜色" "#C27BFF"
+@var color owner-color "群主高光颜色" "#FF9349"
+@var color admin-color "管理员高光颜色" "#397BAC"
+@var color special-color "专属头衔高光颜色" "#C27BFF"
+@var color others-color "普通群成员高光颜色" "#E2E2E2"
 @var color bot-color "bot 颜色" "#0A64FF"
-@var color others-color "普通群成员颜色" "#E2E2E2"
+@var raw display-owner "显示群主 tag (inline-block/none)" "inline-block"
+@var raw display-admin "显示管理员 tag (inline-block/none)" "inline-block"
+@var raw display-special "显示专属头衔 tag (inline-block/none)" "inline-block"
+@var raw display-others "显示普通群成员 tag (inline-block/none)" "inline-block"
+@var raw display-bot "显示 QQ 机器人 tag (inline-flex/none)" "inline-flex"
+@var raw display-level "tag 内显示等级 (inline/none)" "inline"
 ==/UserStyle== */
-.q-tag--orange.group-user__label, .primary.q-tag.member-role-tag {box-shadow: rgb(from var(--owner-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
-.q-tag--blue.group-user__label, .q-tag.member-role-tag {box-shadow: rgb(from var(--admin-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
-.q-tag--purple.group-user__label {box-shadow: rgb(from var(--special-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
-.q-tag--grey.group-user__label {box-shadow: rgb(from var(--others-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px}
+/* 成员列表 tag 高光 */
+.group-user__label { /* 新版本 */
+    &.q-tag--orange { /* 群主 */
+        box-shadow: rgb(from var(--owner-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px;
+    }
+    &.q-tag--blue { /* 管理员 */
+        box-shadow: rgb(from var(--admin-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px;
+    }
+    &.q-tag--purple { /* 专属头衔 */
+        box-shadow: rgb(from var(--special-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px;
+    }
+    &.q-tag--grey { /* 普通群成员 */
+        box-shadow: rgb(from var(--others-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px;
+    }
+}
+.q-tag.member-role-tag { /* 老版本 */
+    box-shadow: rgb(from var(--admin-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px; /* 管理员 */
+    &.primary {
+        box-shadow: rgb(from var(--owner-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px; /* 群主 */
+    }
+}
 
-.q-tag--orange.group-member-label:not(.group-user__label), .primary.q-tag.group-user__role {box-shadow: rgb(from var(--owner-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px}
-.q-tag--blue.group-member-label:not(.group-user__label), .q-tag.group-user__role {box-shadow: rgb(from var(--admin-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px}
-.q-tag--purple.group-member-label:not(.group-user__label) {box-shadow: rgb(from var(--special-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px}
-.q-tag--grey.group-member-label:not(.group-user__label) {box-shadow: rgb(from var(--others-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px}
+/* 聊天界面 tag 高光 */
+.group-member-label:not(.group-user__label) { /* 新版本 */
+    &.q-tag--orange { /* 群主 */
+        box-shadow: rgb(from var(--owner-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px;
+    }
+    &.q-tag--blue { /* 管理员 */
+        box-shadow: rgb(from var(--admin-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px;
+    }
+    &.q-tag--purple { /* 专属头衔 */
+        box-shadow: rgb(from var(--special-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px;
+    }
+    &.q-tag--grey { /* 普通群成员 */
+        box-shadow: rgb(from var(--others-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px;
+    }
+}
+.q-tag.group-user__role { /* 老版本 */
+    box-shadow: rgb(from var(--admin-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px; /* 管理员 */
+    &.primary {
+        box-shadow: rgb(from var(--owner-color) r g b / var(--box-shadow-opacity)) 0px 0px 4px 1px; /* 群主 */
+    }
+}
 
+/* 控制 tag 显示/隐藏 */
+.q-tag {
+    display: var(--display-admin); /* 老版本管理员 */
+    &.q-tag--orange { /* 群主 */
+        display: var(--display-owner);
+    }
+    &.q-tag--blue { /* 管理员 */
+        display: var(--display-admin);
+    }
+    &.q-tag--purple { /* 专属头衔 */
+        display: var(--display-special);
+    }
+    &.q-tag--grey { /* 普通群成员 */
+        display: var(--display-others);
+    }
+    &.primary { /* 老版本群主 */
+        display: var(--display-owner);
+    }
+    > .level { /* 等级 */
+        display: var(--display-level);
+    }
+}
+
+/* QQ 机器人 */
 .qq-bot-label {
+    display: var(--display-bot);
     box-shadow: rgb(from var(--bot-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 1px;
     &.group-user__bot {
         box-shadow: rgb(from var(--bot-color) r g b / var(--box-shadow-opacity)) 0px 0px 6px 2px;
