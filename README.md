@@ -100,6 +100,8 @@
 
 给 qq 的各种头衔添加对应颜色的高光，同时控制头衔的显示/隐藏。(By [@Shapaper233](https://github.com/Shapaper233), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2212343133), Co-authored by huoyan1231 & PRO-2684)
 
+![q-tag-enhancement](./images/q-tag-enhancement.png)
+
 ## [qqface-fine-tune](./qqface-fine-tune.css)
 
 QQ 表情微调：
