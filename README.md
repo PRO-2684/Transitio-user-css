@@ -49,7 +49,7 @@
 
 ## [hide-self](./hide-self.css)
 
-隐藏居右的自己的头像和昵称。
+隐藏居右的自己的头像和昵称。(建议与 [`show-time.js`](https://github.com/PRO-2684/Scriptio-user-scripts/#show-time) 一起使用，替代 QQ 的消息时间显示)
 
 ![hide-self](./images/hide-self.jpg)
 
