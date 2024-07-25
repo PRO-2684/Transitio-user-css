@@ -2,7 +2,7 @@
 @name           Transparent
 @description    透明化部分元素
 @preprocessor   transitio
-@version        0.1.2
+@version        0.1.3
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transparent
 @author         PRO-2684
 @license     	gpl-3.0
@@ -15,7 +15,6 @@
 .expression-panel, /* 表情面板 */
 .side-panel, /* 侧栏 */
 .q-popover, /* 弹出框 */
-.search-result, /* 搜索结果 */
 .q-dialog { /* 对话框 */
     opacity: var(--opacity-1);
 }
