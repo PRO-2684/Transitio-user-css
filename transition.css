@@ -8,39 +8,78 @@
 @license     	gpl-3.0
 @var number duration "过渡时间 (s)" "0.2, 0.01, 2, 0.01"
 ==/UserStyle== */
-/* 背景颜色 */
-* {
-    transition-property: background, border, box-shadow;
+i.q-icon { /* 图标 */
     transition-duration: var(--duration)s;
     transition-timing-function: ease-in-out;
-    transition-delay: 0s;
+    transition-property: color, background, border, opacity;
 }
-i.q-icon {
-    transition-property: color, background, border, box-shadow;
-}
-/* 侧栏图标背景 */
-div.tab-item-mask {
+div.tab-item-mask { /* 侧栏图标背景 */
+    transition-duration: var(--duration)s;
+    transition-timing-function: ease-in-out;
     transition-property: background, opacity;
     &:hover {
         animation: none;
         opacity: 0.04 !important;
     }
 }
-/* 左侧聊天列表的字; 链接/艾特 */
-.recent-contact-item.across-mode { /* 左侧聊天列表的字 */
+.contact-notify > .notify-option, /* 联系人界面的好友通知/群通知 */
+button.q-button, /* 按钮 */
+[role="button"], /* 按钮 */
+div.msg-content-container, /* 消息内容 (貌似无效) */
+div.group-user__content[bf-list-item],
+.nav-bar > .nav-item, /* 设置界面选项 */
+.menu-content-wrap > .menu-content {
+    transition-duration: var(--duration)s;
+    transition-timing-function: ease-in-out;
+    transition-property: background;
+}
+input { /* 输入框 */
+    transition-duration: var(--duration)s;
+    transition-timing-function: ease-in-out;
+    transition-property: border;
+}
+.q-tabs > .q-tabs-item { /* 选项卡项目 */
+    transition-duration: var(--duration)s;
+    transition-timing-function: ease-in-out;
+    transition-property: color;
+}
+.list-item { /* 列表元素 */
+    transition-duration: var(--duration)s;
+    transition-timing-function: ease-in-out;
+    transition-property: background;
     .list-item__title > div > span,
-    .summary-main > div {
+    .summary-main {
+        transition-duration: var(--duration)s;
+        transition-timing-function: ease-in-out;
         transition-property: color;
+    }
+    &.search-result-item { /* 搜索结果列表元素 */
+        transition: none;
+        > .list-item__container > .list-item__content {
+            transition-duration: var(--duration)s;
+            transition-timing-function: ease-in-out;
+            transition-property: background;
+        }
     }
 }
 .text-element { /* 链接/艾特 */
     .text-element--at,
     .text-link {
+        transition-duration: var(--duration)s;
+        transition-timing-function: ease-in-out;
         transition-property: color;
     }
 }
 a { /* 链接 */
+    transition-duration: var(--duration)s;
+    transition-timing-function: ease-in-out;
     transition-property: color;
+    i.q-icon {
+        transition: none;
+    }
+    &.q-context-menu-item {
+        transition-property: color, background;
+    }
 }
 .radio-tab .radio-tab__item > span { /* 好友界面的 tab */
     transition-property: color, opacity !important;
@@ -48,6 +87,8 @@ a { /* 链接 */
     transition-timing-function: ease-in-out !important;
 }
 .operation .send { /* "发送" 按钮颜色（实际上是透明度） */
+    transition-duration: var(--duration)s;
+    transition-timing-function: ease-in-out;
     transition-property: background, opacity;
 }
 /* 菜单动画 (Adapted from https://t.me/ntqqtweaks/14) */
@@ -87,7 +128,7 @@ a { /* 链接 */
         opacity: 100%;
     }
 }
-.ml-item>.message { /* @Shapaper: 添加贝塞尔曲线动效，使消息进入 Q 弹 */
+.ml-item > .message { /* @Shapaper: 添加贝塞尔曲线动效，使消息进入 Q 弹 */
     animation: message-ltr var(--duration)s cubic-bezier(.56,-0.37,.46,1.58);
 
     &:has( .message-container--align-right) {
