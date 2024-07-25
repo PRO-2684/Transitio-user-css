@@ -2,11 +2,11 @@
 @name           Compact At List
 @description    艾特建议面板更为紧凑
 @preprocessor   transitio
-@version        0.1.0
+@version        0.2.0
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#compact-at-list
 @author         PRO-2684
 @license     	gpl-3.0
-@var number panel-width "面板宽度 (em)" "10, 1, 20, 0.5"
+@var number panel-width "面板宽度 (em)" [10, 1, 20, 0.5]
 ==/UserStyle== */
 .editor-at-panel {
     width: var(--panel-width)em !important;

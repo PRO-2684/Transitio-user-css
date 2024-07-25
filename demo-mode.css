@@ -2,11 +2,11 @@
 @name           Demo Mode
 @description    演示模式：模糊化部分元素
 @preprocessor   transitio
-@version        0.1.1
+@version        0.2.0
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#demo-mode
 @author         PRO-2684
 @license     	gpl-3.0
-@var number blur-radius "模糊半径 (px)" "10, 1"
+@var number blur-radius "模糊半径 (px)" [10, 1]
 ==/UserStyle== */
 /* Adapted from: https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode */
 .group-user__avatar,

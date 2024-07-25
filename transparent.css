@@ -2,12 +2,12 @@
 @name           Transparent
 @description    透明化部分元素
 @preprocessor   transitio
-@version        0.1.4
+@version        0.2.0
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transparent
 @author         PRO-2684
 @license     	gpl-3.0
-@var percent opacity-1 "透明度 1" "90"
-@var percent opacity-2 "透明度 2" "80"
+@var percent opacity-1 "透明度 1" 90
+@var percent opacity-2 "透明度 2" 80
 ==/UserStyle== */
 .q-menu, /* 菜单 */
 .q-context-menu:not(.is-pure), /* 菜单 */

@@ -6,7 +6,7 @@
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#image-viewer
 @author         PRO-2684
 @license     	gpl-3.0
-@var percent opacity "透明度" "40"
+@var percent opacity "透明度" 40
 ==/UserStyle== */
 /* 图片查看器 */
 div.main-area__footer {
