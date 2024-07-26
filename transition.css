@@ -2,7 +2,7 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.2.0
+@version        0.2.1
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
@@ -24,50 +24,53 @@ div.tab-item-mask { /* 侧栏图标背景 */
 }
 .contact-notify > .notify-option, /* 联系人界面的好友通知/群通知 */
 button.q-button, /* 按钮 */
+.btn-item, /* 按钮 (分享群聊界面) */
 [role="button"], /* 按钮 */
+.q-like-button, /* 点赞按钮 */
+.q-checkbox .q-checkbox__input, /* 复选框 */
+.q-select-button, /* 下拉框按钮 */
 div.msg-content-container, /* 消息内容 (貌似无效) */
-div.group-user__content[bf-list-item],
+div.reply-element, /* 回复消息 */
+.group-user > .group-user__content[bf-list-item], /* 群成员列表 */
+.group-user.group-user--btn, /* 群成员列表 (邀请) */
 .nav-bar > .nav-item, /* 设置界面选项 */
+.category-item, /* 分类项目 (好友管理器侧栏) */
+.table__row, /* 表格行 (好友管理器好友项目) */
+.notice__container .notice__content .notice-item, /* 群公告 */
+.menu-stickers > .menu-stickers-item, /* 表情回应面板 (小) 的项目 */
+.menu-stickers-panel > .stickers-list > .stickers-list-item, /* 表情回应面板 (完整) 的项目 */
+.reaction-panel > .reaction-item, /* 表情回应面板 (消息下方) 的项目 */
+.reaction-panel > .more-reaction-item, /* 表情回应面板 (消息下方) 的更多 */
+.message-tips > .message-tail > .message-btn-items, /* 机器人消息下方按钮 (貌似无效) */
 .menu-content-wrap > .menu-content {
-    transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
-    transition-property: background;
+    transition: background var(--duration)s ease-in-out;
 }
-input { /* 输入框 */
-    transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
-    transition-property: border;
+input, .input-container { /* 输入框 */
+    transition: border var(--duration)s ease-in-out;
 }
 .q-tabs > .q-tabs-item { /* 选项卡项目 */
-    transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
-    transition-property: color;
+    transition: color var(--duration)s ease-in-out;
 }
 .list-item { /* 列表元素 */
-    transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
-    transition-property: background;
+    transition: background var(--duration)s ease-in-out;
     .list-item__title > div > span,
     .summary-main {
-        transition-duration: var(--duration)s;
-        transition-timing-function: ease-in-out;
-        transition-property: color;
+        transition: color var(--duration)s ease-in-out;
     }
     &.search-result-item { /* 搜索结果列表元素 */
         transition: none;
         > .list-item__container > .list-item__content {
-            transition-duration: var(--duration)s;
-            transition-timing-function: ease-in-out;
-            transition-property: background;
+            transition: background var(--duration)s ease-in-out;
         }
+    }
+    > .list-item__container > .list-item__content {
+        transition: background var(--duration)s ease-in-out;
     }
 }
 .text-element { /* 链接/艾特 */
     .text-element--at,
     .text-link {
-        transition-duration: var(--duration)s;
-        transition-timing-function: ease-in-out;
-        transition-property: color;
+        transition: color var(--duration)s ease-in-out;
     }
 }
 a { /* 链接 */
@@ -86,10 +89,11 @@ a { /* 链接 */
     transition-duration: var(--duration)s !important;
     transition-timing-function: ease-in-out !important;
 }
-.operation .send { /* "发送" 按钮颜色（实际上是透明度） */
-    transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
-    transition-property: background, opacity;
+.operation > .send-btn-wrap > div { /* "发送" 按钮 */
+    transition: background var(--duration)s ease-in-out;
+    > .send {
+        transition: opacity var(--duration)s ease-in-out;
+    }
 }
 /* 菜单动画 (Adapted from https://t.me/ntqqtweaks/14) */
 @keyframes fadeIn {
