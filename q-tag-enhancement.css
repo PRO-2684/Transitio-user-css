@@ -17,7 +17,7 @@
 @var select display-special "显示专属头衔 tag" [0, ["inline-block", "显示"], ["none", "隐藏"]]
 @var select display-others "显示普通群成员 tag" [0, ["inline-block", "显示"], ["none", "隐藏"]]
 @var select display-bot "显示 QQ 机器人 tag" [0, ["inline-flex", "显示"], ["none", "隐藏"]]
-@var select display-level "tag 内显示等级 (若隐藏，建议同时隐藏'显示普通群成员 tag')" [0, ["inline", "显示"], ["none", "隐藏"]]
+@var select display-level "tag 内显示等级 (若隐藏，建议同时隐藏普通群成员 tag)" [0, ["inline", "显示"], ["none", "隐藏"]]
 ==/UserStyle== */
 /* 成员列表 tag 高光 */
 .group-user__label { /* 新版本 */
