@@ -2,11 +2,14 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.2.1
+@version        0.2.2
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
 @var number duration "过渡时间 (s)" [0.2, 0.01, 2, 0.01]
+@var select timing-function-global "全局过渡函数" [3, "ease", "ease-in", "ease-out", "ease-in-out", "linear", "cubic-bezier(.56, -0.37, .46, 1.58)"]
+@var select timing-function-message "消息动画过渡函数" [5, "ease", "ease-in", "ease-out", "ease-in-out", "linear", "cubic-bezier(.56, -0.37, .46, 1.58)"]
+@var number message-magnitude "消息动画强度 (em)" [5, 1, 10, 0.1]
 ==/UserStyle== */
 .contact-notify > .notify-option, /* 联系人界面的好友通知/群通知 */
 button.q-button, /* 按钮 */
@@ -33,43 +36,43 @@ div.reply-element, /* 回复消息 */
 .message-tips > .message-tail > .message-btn-items, /* 机器人消息下方按钮 (貌似无效) */
 .main-area--image .main-area__footer .image-viewer__icon, /* 图片查看器底部图标 */
 .menu-content-wrap > .menu-content { /* 忘了是啥 */
-    transition: background var(--duration)s ease-in-out;
+    transition: background var(--duration)s var(--timing-function-global);
 }
 .text-element .text-element--at, /* 艾特 */
 .text-element .text-link, /* 链接 */
 .q-tabs > .q-tabs-item { /* 选项卡项目 */
-    transition: color var(--duration)s ease-in-out;
+    transition: color var(--duration)s var(--timing-function-global);
 }
 input, .input-container { /* 输入框 */
-    transition: border var(--duration)s ease-in-out;
+    transition: border var(--duration)s var(--timing-function-global);
 }
 .sticker-container > .sticker-list > .sticker-list-item .sticker-list-item-img { /* 收藏表情/表情包项目 */
-    transition: transform var(--duration)s ease-in-out;
+    transition: transform var(--duration)s var(--timing-function-global);
 }
 .main-area .main-area__arrow-icon { /* 媒体查看器的箭头图标 */
     transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: var(--timing-function-global);
     transition-property: background, opacity;
 }
 i.q-icon { /* 图标 */
     transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: var(--timing-function-global);
     transition-property: color, background, border, opacity;
 }
 .radio-tab .radio-tab__item > span { /* 好友界面的 tab */
     transition-duration: var(--duration)s !important;
-    transition-timing-function: ease-in-out !important;
+    transition-timing-function: var(--timing-function-global) !important;
     transition-property: color, opacity !important;
 }
 .operation > .send-btn-wrap > div { /* "发送" 按钮 */
-    transition: background var(--duration)s ease-in-out;
+    transition: background var(--duration)s var(--timing-function-global);
     > .send {
-        transition: opacity var(--duration)s ease-in-out;
+        transition: opacity var(--duration)s var(--timing-function-global);;
     }
 }
 div.tab-item-mask { /* 侧栏图标背景 */
     transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: var(--timing-function-global);
     transition-property: background, opacity;
     &:hover {
         animation: none;
@@ -77,24 +80,24 @@ div.tab-item-mask { /* 侧栏图标背景 */
     }
 }
 .list-item { /* 列表元素 */
-    transition: background var(--duration)s ease-in-out;
+    transition: background var(--duration)s var(--timing-function-global);
     .list-item__title > div > span,
     .summary-main {
-        transition: color var(--duration)s ease-in-out;
+        transition: color var(--duration)s var(--timing-function-global);
     }
     &.search-result-item { /* 搜索结果列表元素 */
         transition: none;
         > .list-item__container > .list-item__content {
-            transition: background var(--duration)s ease-in-out;
+            transition: background var(--duration)s var(--timing-function-global);
         }
     }
     > .list-item__container > .list-item__content {
-        transition: background var(--duration)s ease-in-out;
+        transition: background var(--duration)s var(--timing-function-global);
     }
 }
 a { /* 链接 */
     transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: var(--timing-function-global);
     transition-property: color;
     i.q-icon {
         transition: none;
@@ -122,7 +125,7 @@ a { /* 链接 */
 /* 消息动画 (Adapted from https://github.com/PRO-2684/Transitio-user-css/pull/1/commits/d81cab38e7d9a41936002ee96e830c30458895a8) */
 @keyframes message-ltr {
     from {
-        transform: translateX(-5em);
+        transform: translateX(-var(--message-magnitude)em);
         opacity: 0%;
     }
     to {
@@ -132,7 +135,7 @@ a { /* 链接 */
 }
 @keyframes message-rtl {
     from {
-        transform: translateX(5em);
+        transform: translateX(var(--message-magnitude)em);
         opacity: 0%;
     }
     to {
@@ -141,7 +144,7 @@ a { /* 链接 */
     }
 }
 .ml-item > .message { /* @Shapaper: 添加贝塞尔曲线动效，使消息进入 Q 弹 */
-    animation: message-ltr var(--duration)s cubic-bezier(.56, -0.37, .46, 1.58);
+    animation: message-ltr var(--duration)s var(--timing-function-message);
     &:has( .message-container--align-right) {
         animation-name: message-rtl;
     }
