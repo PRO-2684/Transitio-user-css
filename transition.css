@@ -8,20 +8,6 @@
 @license     	gpl-3.0
 @var number duration "过渡时间 (s)" [0.2, 0.01, 2, 0.01]
 ==/UserStyle== */
-i.q-icon { /* 图标 */
-    transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
-    transition-property: color, background, border, opacity;
-}
-div.tab-item-mask { /* 侧栏图标背景 */
-    transition-duration: var(--duration)s;
-    transition-timing-function: ease-in-out;
-    transition-property: background, opacity;
-    &:hover {
-        animation: none;
-        opacity: 0.04 !important;
-    }
-}
 .contact-notify > .notify-option, /* 联系人界面的好友通知/群通知 */
 button.q-button, /* 按钮 */
 .btn-item, /* 按钮 (分享群聊界面) */
@@ -34,6 +20,9 @@ div.reply-element, /* 回复消息 */
 .group-user > .group-user__content[bf-list-item], /* 群成员列表 */
 .group-user.group-user--btn, /* 群成员列表 (邀请) */
 .nav-bar > .nav-item, /* 设置界面选项 */
+.tabs > .tabs-container > .tabs-container-item, /* 标签页项目 (表情面板) */
+.tabs > .tabs-arrow, /* 标签页箭头 (表情面板) */
+.stickers > .stickers-item, /* QQ 表情项目 */
 .category-item, /* 分类项目 (好友管理器侧栏) */
 .table__row, /* 表格行 (好友管理器好友项目) */
 .notice__container .notice__content .notice-item, /* 群公告 */
@@ -42,14 +31,50 @@ div.reply-element, /* 回复消息 */
 .reaction-panel > .reaction-item, /* 表情回应面板 (消息下方) 的项目 */
 .reaction-panel > .more-reaction-item, /* 表情回应面板 (消息下方) 的更多 */
 .message-tips > .message-tail > .message-btn-items, /* 机器人消息下方按钮 (貌似无效) */
-.menu-content-wrap > .menu-content {
+.main-area--image .main-area__footer .image-viewer__icon, /* 图片查看器底部图标 */
+.menu-content-wrap > .menu-content { /* 忘了是啥 */
     transition: background var(--duration)s ease-in-out;
+}
+.text-element .text-element--at, /* 艾特 */
+.text-element .text-link, /* 链接 */
+.q-tabs > .q-tabs-item { /* 选项卡项目 */
+    transition: color var(--duration)s ease-in-out;
 }
 input, .input-container { /* 输入框 */
     transition: border var(--duration)s ease-in-out;
 }
-.q-tabs > .q-tabs-item { /* 选项卡项目 */
-    transition: color var(--duration)s ease-in-out;
+.sticker-container > .sticker-list > .sticker-list-item .sticker-list-item-img { /* 收藏表情/表情包项目 */
+    transition: transform var(--duration)s ease-in-out;
+}
+.main-area .main-area__arrow-icon { /* 媒体查看器的箭头图标 */
+    transition-duration: var(--duration)s;
+    transition-timing-function: ease-in-out;
+    transition-property: background, opacity;
+}
+i.q-icon { /* 图标 */
+    transition-duration: var(--duration)s;
+    transition-timing-function: ease-in-out;
+    transition-property: color, background, border, opacity;
+}
+.radio-tab .radio-tab__item > span { /* 好友界面的 tab */
+    transition-duration: var(--duration)s !important;
+    transition-timing-function: ease-in-out !important;
+    transition-property: color, opacity !important;
+}
+.operation > .send-btn-wrap > div { /* "发送" 按钮 */
+    transition: background var(--duration)s ease-in-out;
+    > .send {
+        transition: opacity var(--duration)s ease-in-out;
+    }
+}
+div.tab-item-mask { /* 侧栏图标背景 */
+    transition-duration: var(--duration)s;
+    transition-timing-function: ease-in-out;
+    transition-property: background, opacity;
+    &:hover {
+        animation: none;
+        opacity: 0.04 !important;
+    }
 }
 .list-item { /* 列表元素 */
     transition: background var(--duration)s ease-in-out;
@@ -67,12 +92,6 @@ input, .input-container { /* 输入框 */
         transition: background var(--duration)s ease-in-out;
     }
 }
-.text-element { /* 链接/艾特 */
-    .text-element--at,
-    .text-link {
-        transition: color var(--duration)s ease-in-out;
-    }
-}
 a { /* 链接 */
     transition-duration: var(--duration)s;
     transition-timing-function: ease-in-out;
@@ -82,17 +101,6 @@ a { /* 链接 */
     }
     &.q-context-menu-item {
         transition-property: color, background;
-    }
-}
-.radio-tab .radio-tab__item > span { /* 好友界面的 tab */
-    transition-property: color, opacity !important;
-    transition-duration: var(--duration)s !important;
-    transition-timing-function: ease-in-out !important;
-}
-.operation > .send-btn-wrap > div { /* "发送" 按钮 */
-    transition: background var(--duration)s ease-in-out;
-    > .send {
-        transition: opacity var(--duration)s ease-in-out;
     }
 }
 /* 菜单动画 (Adapted from https://t.me/ntqqtweaks/14) */
@@ -133,8 +141,7 @@ a { /* 链接 */
     }
 }
 .ml-item > .message { /* @Shapaper: 添加贝塞尔曲线动效，使消息进入 Q 弹 */
-    animation: message-ltr var(--duration)s cubic-bezier(.56,-0.37,.46,1.58);
-
+    animation: message-ltr var(--duration)s cubic-bezier(.56, -0.37, .46, 1.58);
     &:has( .message-container--align-right) {
         animation-name: message-rtl;
     }
