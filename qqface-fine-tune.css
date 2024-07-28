@@ -2,13 +2,13 @@
 @name           QQ Face Fine Tune
 @description    QQ 表情微调
 @preprocessor   transitio
-@version        0.1.0
+@version        0.2.0
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#qqface-fine-tune
 @author         PRO-2684
 @license     	gpl-3.0
-@var number recents-panel-gap "最近表情面板间距 (em)" "0.5, 0.1, +Infinity, 0.1"
-@var number recents-panel-width "最近表情面板宽度 (em)" "12, 1, 20, 0.5"
-@var number suggestion-panel-width "表情建议面板宽度 (em)" "10, 1, 20, 0.5"
+@var number recents-panel-gap "最近表情面板间距 (em)" [0.5, 0.1, 5, 0.1]
+@var number recents-panel-width "最近表情面板宽度 (em)" [12, 1, 20, 0.5]
+@var number suggestion-panel-width "表情建议面板宽度 (em)" [10, 1, 20, 0.5]
 ==/UserStyle== */
 /* 使用系统 Emoji (与字体) */
 body, html {

@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name           Vue Highlight
+@description    高亮 Vue components，用于开发目的 (带 `vue-component` 类的元素)
+@preprocessor   transitio
+@version        0.1.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#q-tag-enhancement
+@author         PRO-2684
+@license     	gpl-3.0
+@var color highlight-color "高亮颜色" "#5D83BB"
+@var percent highlight-opacity "高亮透明度 (%)" 80
+@var number highlight-width "高亮宽度 (px)" [2, 0]
+@var number highlight-blur "高亮模糊 (px)" [4, 0]
+==/UserStyle== */
+.vue-component {
+    box-shadow: inset 0 0 var(--highlight-blur)px var(--highlight-width)px rgb(from var(--highlight-color) r g b / var(--highlight-opacity));
+}

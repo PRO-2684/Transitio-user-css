@@ -2,27 +2,43 @@
 @name           Image Viewer
 @description    媒体查看器透明度修改
 @preprocessor   transitio
-@version        0.1.1
+@version        0.1.2
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#image-viewer
 @author         PRO-2684
 @license     	gpl-3.0
-@var percent opacity "透明度" "40"
+@var percent opacity "透明度" 40
 ==/UserStyle== */
 /* 图片查看器 */
-div.main-area__footer {
-    backdrop-filter: none;
-    background: rgba(0, 0, 0, 0.4);
-}
-div.image-viewer__tip {
-    opacity: 0.4;
-}
-div.main-area__arrow-icon {
-    backdrop-filter: none;
+.main-area.main-area--image {
+    > .main-area__content {
+        overflow: visible;
+        > .image-viewer__tip {
+            backdrop-filter: none;
+            opacity: var(--opacity);
+        }
+    }
+    > .main-area__footer {
+        backdrop-filter: none;
+        background: rgba(0, 0, 0, var(--opacity));
+    }
+    .main-area__arrow-icon {
+        backdrop-filter: none;
+    }
 }
 /* 视频查看器 */
-div.plugin-panel-main-area {
-    opacity: var(--opacity);
-    > div.footer {
+.main-area.main-area--video {
+    > .image-viewer__tip {
         backdrop-filter: none;
+        opacity: var(--opacity);
+    }
+    .main-area__arrow-icon {
+        backdrop-filter: none;
+    }
+    .video-viewer {
+        height: 100%; /* 修复视频查看器底部空白问题 */
+        .plugin-panel-main-area > .footer {
+            backdrop-filter: none;
+            background: rgba(0, 0, 0, var(--opacity));
+        }
     }
 }
