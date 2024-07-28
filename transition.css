@@ -18,7 +18,8 @@ button.q-button, /* 按钮 */
 .q-like-button, /* 点赞按钮 */
 .q-checkbox .q-checkbox__input, /* 复选框 */
 .q-select-button, /* 下拉框按钮 */
-div.msg-content-container, /* 消息内容 (貌似无效) */
+.message .forward-msg, /* 转发消息 */
+.message .file-message--content > .file-element, /* 文件消息 */
 div.reply-element, /* 回复消息 */
 .group-user > .group-user__content[bf-list-item], /* 群成员列表 */
 .group-user.group-user--btn, /* 群成员列表 (邀请) */
@@ -106,6 +107,12 @@ a { /* 链接 */
         transition-property: color, background;
     }
 }
+.message .message-content__wrapper > div.msg-content-container { /* 消息内容 (貌似无效) */
+    &::before { /* 取消聚焦时的遮罩效果 */
+        display: none !important;
+    }
+}
+
 /* 菜单动画 (Adapted from https://t.me/ntqqtweaks/14) */
 @keyframes fadeIn {
     from {
@@ -119,7 +126,7 @@ a { /* 链接 */
         margin-left: 0px;
     }
 }
-.q-menu, .q-context-menu, .q-context-sub-menu__container, .q-tooltips__content, .q-float-card {
+.q-menu, .q-context-menu, .q-context-sub-menu__container, .q-tooltips__content, .q-float-card, .menu-stickers-panel {
     animation: fadeIn var(--duration)s;
 }
 /* 消息动画 (Adapted from https://github.com/PRO-2684/Transitio-user-css/pull/1/commits/d81cab38e7d9a41936002ee96e830c30458895a8) */
