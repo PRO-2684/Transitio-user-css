@@ -126,3 +126,7 @@ QQ 表情微调：
 ## [variable-fonts-fix](./variable-fonts-fix.css)
 
 给可变字体添加一定的字宽，使用前请确保 litetools 自定义字体使用的是可变字体（可自助更改）。(By [@Shapaper233](https://github.com/Shapaper233), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2212343133))
+
+## [vue-highlight](./vue-highlight.css)
+
+高亮 Vue components，用于开发目的。
