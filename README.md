@@ -67,7 +67,7 @@
 
 ## [input-placeholder](./input-placeholder.css)
 
-添加可自定义的输入框占位符（类似于 QA 的输入框提示）：`Type words here...`
+自定义输入框提示/占位符（类似于 QA 的输入框提示 `Type words here...`）
 
 ![input-placeholder](./images/input-placeholder.jpg)
 

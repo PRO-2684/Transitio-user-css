@@ -1,14 +1,24 @@
 /* ==UserStyle==
 @name           Input Placeholder
-@description    增加输入框提示
+@description    自定义输入框提示
 @preprocessor   transitio
-@version        0.1.0
+@version        0.1.1
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#input-placeholder
 @author         PRO-2684
 @license     	gpl-3.0
 @var text placeholder "输入框提示" "Type words here..."
+@var percent opacity "输入框提示透明度 (%)" 80
+@var color muted-color "原生输入框提示颜色 (禁言等)" "#ff0000"
+@var color custom-color "自定义输入框提示颜色" "#808080"
 ==/UserStyle== */
 /* 灵感来源于 Telegram Theme */
-.qq-editor[style$='"";'] .ck-placeholder:before {
-    --qq-editor-placeholder: var(--placeholder);
+.qq-editor {
+    .ck .ck-placeholder::before {
+        opacity: var(--opacity);
+        color: var(--muted-color);
+    }
+    &[style$='"";'] .ck .ck-placeholder::before {
+        --qq-editor-placeholder: var(--placeholder);
+        color: var(--custom-color);
+    }
 }
