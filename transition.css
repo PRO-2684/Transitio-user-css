@@ -2,7 +2,7 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.2.3
+@version        0.2.4
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
@@ -12,7 +12,7 @@
 @var select timing-function-message "消息动画过渡函数" [5, "ease", "ease-in", "ease-out", "ease-in-out", "linear", "cubic-bezier(.56, -0.37, .46, 1.58)"]
 @var number message-magnitude "消息动画强度 (em)" [5, 1, 10, 0.1]
 ==/UserStyle== */
-html, .q-scroll-view { /* 平滑滚动 */
+html, .q-scroll-view:not(.ml-container) { /* 平滑滚动 */
     scroll-behavior: var(--smooth-scroll);
 }
 .contact-notify > .notify-option, /* 联系人界面的好友通知/群通知 */
