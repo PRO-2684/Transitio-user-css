@@ -2,15 +2,19 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.2.2
+@version        0.2.3
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
+@var checkbox smooth-scroll "平滑滚动" [1, "auto", "smooth"]
 @var number duration "过渡时间 (s)" [0.2, 0.01, 2, 0.01]
 @var select timing-function-global "全局过渡函数" [3, "ease", "ease-in", "ease-out", "ease-in-out", "linear", "cubic-bezier(.56, -0.37, .46, 1.58)"]
 @var select timing-function-message "消息动画过渡函数" [5, "ease", "ease-in", "ease-out", "ease-in-out", "linear", "cubic-bezier(.56, -0.37, .46, 1.58)"]
 @var number message-magnitude "消息动画强度 (em)" [5, 1, 10, 0.1]
 ==/UserStyle== */
+html, .q-scroll-view { /* 平滑滚动 */
+    scroll-behavior: var(--smooth-scroll);
+}
 .contact-notify > .notify-option, /* 联系人界面的好友通知/群通知 */
 button.q-button, /* 按钮 */
 .btn-item, /* 按钮 (分享群聊界面) */
@@ -18,6 +22,7 @@ button.q-button, /* 按钮 */
 .q-like-button, /* 点赞按钮 */
 .q-checkbox .q-checkbox__input, /* 复选框 */
 .q-select-button, /* 下拉框按钮 */
+.message-btn-items, /* 机器人消息内部按钮 */
 .message .forward-msg, /* 转发消息 */
 .message .file-message--content > .file-element, /* 文件消息 */
 div.reply-element, /* 回复消息 */
