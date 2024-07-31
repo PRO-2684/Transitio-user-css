@@ -2,7 +2,7 @@
 @name           Image Viewer
 @description    媒体查看器透明度修改
 @preprocessor   transitio
-@version        0.1.3
+@version        0.1.4
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#image-viewer
 @author         PRO-2684
 @license     	gpl-3.0
@@ -27,7 +27,7 @@
     }
     .image-viewer__tip {
         backdrop-filter: none;
-        opacity: var(--opacity);
+        background: rgba(0, 0, 0, var(--opacity));
     }
     .main-area__arrow-icon {
         backdrop-filter: none;
