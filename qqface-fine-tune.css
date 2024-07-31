@@ -2,7 +2,7 @@
 @name           QQ Face Fine Tune
 @description    QQ 表情微调
 @preprocessor   transitio
-@version        0.2.0
+@version        0.2.1
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#qqface-fine-tune
 @author         PRO-2684
 @license     	gpl-3.0
@@ -15,7 +15,7 @@ body, html {
     font-family: system-ui, PingFang SC, PingFangSC-Regular, Microsoft YaHei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif, Apple Braille;
 }
 /* 最近表情面板更为紧凑 */
-.stickers.recent-used {
+.sticker-panel > .stickers.recent-used {
     padding: var(--recents-panel-gap)em !important;
     row-gap: var(--recents-panel-gap)em;
     column-gap: var(--recents-panel-gap)em;
