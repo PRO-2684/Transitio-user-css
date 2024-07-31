@@ -2,11 +2,12 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.2.4
+@version        0.2.5
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
 @var checkbox smooth-scroll "平滑滚动" [1, "auto", "smooth"]
+@var checkbox remove-select-overlay "移除消息聚焦遮罩" [1, "block", "none"]
 @var number duration "过渡时间 (s)" [0.2, 0.01, 2, 0.01]
 @var select timing-function-global "全局过渡函数" [3, "ease", "ease-in", "ease-out", "ease-in-out", "linear", "cubic-bezier(.56, -0.37, .46, 1.58)"]
 @var select timing-function-message "消息动画过渡函数" [5, "ease", "ease-in", "ease-out", "ease-in-out", "linear", "cubic-bezier(.56, -0.37, .46, 1.58)"]
@@ -114,7 +115,12 @@ a { /* 链接 */
 }
 .message .message-content__wrapper > div.msg-content-container { /* 消息内容 (貌似无效) */
     &::before { /* 取消聚焦时的遮罩效果 */
-        display: none !important;
+        display: var(--remove-select-overlay) !important;
+    }
+    > .message-content {
+        > .image::after, .markdown-image::after {
+            display: var(--remove-select-overlay) !important;
+        }
     }
 }
 
