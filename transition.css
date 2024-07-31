@@ -2,7 +2,7 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.2.5
+@version        0.2.6
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
@@ -120,6 +120,21 @@ a { /* 链接 */
     > .message-content {
         > .image::after, .markdown-image::after {
             display: var(--remove-select-overlay) !important;
+        }
+    }
+}
+.msg-list > .record-msg-detail {
+    > i.q-icon.target-to-chat {
+        opacity: 0;
+        transition-duration: var(--duration)s;
+        transition-timing-function: var(--timing-function-global);
+        transition-property: opacity, color, display;
+        transition-behavior: allow-discrete;
+    }
+    &:hover > i.q-icon.target-to-chat {
+        opacity: 1;
+        @starting-style {
+            opacity: 0;
         }
     }
 }
