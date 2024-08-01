@@ -1,6 +1,6 @@
 /* ==UserStyle==
-@name           No Update Dialog
-@description    通过 CSS 隐藏更新提示框
+@name           No Update
+@description    通过 CSS 隐藏更新提示框以及小红点
 @preprocessor   transitio
 @version        0.1.0
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#no-update-dialog
@@ -8,5 +8,8 @@
 @license     	gpl-3.0
 ==/UserStyle== */
 div.q-dialog:has(>div.update-dialog) {
+    display: none;
+}
+sub.q-badge-sub.q-badge-dot.q-badge-dot__small.q-badge__red {
     display: none;
 }

@@ -85,16 +85,11 @@
 
 ![995d1ee03664c8f9bb0479c463378225](https://github.com/PRO-2684/Transitio-user-css/assets/157946924/22149ce4-261d-4b3a-ad78-b93709c320b2)
 
+## [no-update](./no-update.css)
 
-## [no-update-dialog](./no-update-dialog.css)
+隐藏更新提示框以及小红点。
 
-隐藏更新提示。
-
-## [no-update-dot](./no-update-dot.css)
-
-隐藏更新提示小红点。
-
-![no-update-dot](./images/no-update-dot.jpg)
+![no-update](./images/no-update.jpg)
 
 ## [q-tag-enhancement](./q-tag-enhancement.css)
 
