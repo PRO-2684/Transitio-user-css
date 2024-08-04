@@ -2,7 +2,7 @@
 @name           Image Viewer
 @description    媒体查看器透明度修改
 @preprocessor   transitio
-@version        0.1.4
+@version        0.1.5
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#image-viewer
 @author         PRO-2684
 @license     	gpl-3.0
@@ -18,7 +18,7 @@
             background: rgba(0, 0, 0, var(--opacity));
         }
     }
-    &.main-area--video.video-viewer { /* 视频查看器 */
+    &.main-area--video > .video-viewer { /* 视频查看器 */
         height: 100%; /* 修复视频查看器底部空白问题 */
         .plugin-panel-main-area > .footer {
             backdrop-filter: none;
