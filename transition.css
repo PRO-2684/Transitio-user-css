@@ -2,7 +2,7 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.2.6
+@version        0.2.7
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
@@ -42,6 +42,10 @@ div.reply-element, /* 回复消息 */
 .reaction-panel > .more-reaction-item, /* 表情回应面板 (消息下方) 的更多 */
 .message-tips > .message-tail > .message-btn-items, /* 机器人消息下方按钮 (貌似无效) */
 .main-area--image .main-area__footer .image-viewer__icon, /* 图片查看器底部图标 */
+.favorites-layout__category-list > .favorites-layout__category-list-item, /* 收藏类型列表项目 */
+.favorites-item-mainList > .favorites-item, /* 收藏项目 */
+.nav-item .nav-item-container, /* 文件管理器侧栏项目 */
+.file-manager-main .file-list-normal-scroll-container .file-container, /* 文件管理器文件项目 */
 .menu-content-wrap > .menu-content { /* 忘了是啥 */
     transition: background var(--duration)s var(--timing-function-global);
 }
@@ -123,8 +127,9 @@ a { /* 链接 */
         }
     }
 }
-.msg-list > .record-msg-detail {
-    > i.q-icon.target-to-chat {
+
+.msg-list > .record-msg-detail { /* 聊天记录 */
+    > i.q-icon.target-to-chat { /* 聊天记录中的图标 */
         opacity: 0;
         transition-duration: var(--duration)s;
         transition-timing-function: var(--timing-function-global);
@@ -132,6 +137,24 @@ a { /* 链接 */
         transition-behavior: allow-discrete;
     }
     &:hover > i.q-icon.target-to-chat {
+        opacity: 1;
+        @starting-style {
+            opacity: 0;
+        }
+    }
+}
+.search-base-panel.record-panel .message-wrapper { /* 本地搜索 - 聊天记录 */
+    > .message { /* 消息 */
+        transition: background var(--duration)s var(--timing-function-global);
+    }
+    > i.icon.q-icon { /* 图标 */
+        opacity: 0;
+        transition-duration: var(--duration)s;
+        transition-timing-function: var(--timing-function-global);
+        transition-property: opacity, display;
+        transition-behavior: allow-discrete;
+    }
+    &:hover > i.icon.q-icon {
         opacity: 1;
         @starting-style {
             opacity: 0;
