@@ -2,7 +2,7 @@
 @name           Image Viewer
 @description    媒体查看器透明度修改
 @preprocessor   transitio
-@version        0.1.5
+@version        0.1.6
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#image-viewer
 @author         PRO-2684
 @license     	gpl-3.0
@@ -11,7 +11,15 @@
 .main-area {
     &.main-area--image { /* 图片查看器 */
         > .main-area__content {
-            overflow: visible;
+            overflow: visible !important;
+            height: 100% !important;
+            > .main-area__image-rotate-wrap {
+                height: 100% !important;
+            }
+            > .main-area__loading-tip {
+                backdrop-filter: none;
+                background: rgba(0, 0, 0, var(--opacity));
+            }
         }
         > .main-area__footer {
             backdrop-filter: none;
