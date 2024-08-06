@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name           Rainbow Name
+@description    让自己的名字变为彩虹色
+@preprocessor   transitio
+@version        0.1.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#rainbow-name
+@author         InfSein
+@license     	gpl-3.0
+==/UserStyle== */
+.user-name--selfReverse span.text-ellipsis {
+    background: linear-gradient(90deg, red, orange, yellow, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -108,6 +108,10 @@ QQ 表情微调：
 
 ![qqface-fine-tune-suggest](./images/qqface-fine-tune-suggest.jpg)
 
+## [rainbow-name](./rainbow-name.css)
+
+让自己的名字变为彩虹色。
+
 ## [transition](./transition.css)
 
 添加过渡动画。可自定义过渡时间。
