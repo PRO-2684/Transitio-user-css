@@ -2,7 +2,7 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.2.7
+@version        0.2.8
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
@@ -158,6 +158,22 @@ a { /* 链接 */
         opacity: 1;
         @starting-style {
             opacity: 0;
+        }
+    }
+}
+.main-area .image-viewer__tip { /* 图片查看器的提示 */
+    transition-duration: var(--duration)s;
+    transition-timing-function: var(--timing-function-global);
+    transition-property: opacity, display;
+    transition-behavior: allow-discrete;
+    opacity: 1;
+    @starting-style {
+        opacity: 0;
+    }
+    &[style*="display: none;"] {
+        opacity: 0;
+        @starting-style {
+            opacity: 1;
         }
     }
 }
