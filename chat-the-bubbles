@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name           Chat The Bubbles
+@description    聊天气泡描边（白色主题真的很难分辨气泡和背景）
+@preprocessor   transitio
+@version        1.0.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#chat-the-bubbles
+@author         BingZi-233
+@license     	gpl-3.0
+==/UserStyle== */
+.msg-content-container {
+    border: 1px solid black !important;
+}
