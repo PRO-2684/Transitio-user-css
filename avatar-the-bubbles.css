@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name           Avatar The Bubbles
+@description    头像描边（总有白色头像或者透明头像）
+@preprocessor   transitio
+@version        1.0.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#avatar-the-bubbles
+@author         BingZi-233
+@license     	gpl-3.0
+==/UserStyle== */
+#ml-root .avatar-span .avatar{
+    position: sticky;
+    top: 1em;
+    border: 1px solid black; /* 添加描边 */
+    border-radius: 20px; /* 可选：添加圆角 */
+}
