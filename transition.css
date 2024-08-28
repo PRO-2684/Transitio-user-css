@@ -46,6 +46,8 @@ div.reply-element, /* 回复消息 */
 .favorites-item-mainList > .favorites-item, /* 收藏项目 */
 .nav-item .nav-item-container, /* 文件管理器侧栏项目 */
 .file-manager-main .file-list-normal-scroll-container .file-container, /* 文件管理器文件项目 */
+.sys-status-editor .sys-status-option, /* 在线状态项目 */
+.sys-status-setting__container .custom-status-option, /* 自定义状态项目 */
 .menu-content-wrap > .menu-content { /* 忘了是啥 */
     transition: background var(--duration)s var(--timing-function-global);
 }
