@@ -26,7 +26,7 @@
 
 ## [hide-emoticon-response](./hide-emoticon-response.css)
 
-移除右键消息上的表情回应。(By [InfSein](https://github.com/InfSein), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2207904703))
+移除右键消息上的表情回应。(By [@InfSein](https://github.com/InfSein), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2207904703))
 
 ## [hide-items](./hide-items.css)
 
@@ -42,8 +42,9 @@
 - 窗口控制栏的小面板按钮
 - 左上角的 QQ Logo
 - 群在线文档
+- 文件侧边栏下方的导入手机相册功能
 
-若有需要，可以自行注释/删除掉相应代码。
+若有需要，可以自行注释/删除掉相应代码。(By [@PRO-2684](https://github.com/PRO-2684), co-authored by @wilsendd & @YatFanLan)
 
 ## [hide-lock](./hide-lock.css)
 
@@ -98,7 +99,7 @@
 
 ## [q-tag-enhancement](./q-tag-enhancement.css)
 
-给 qq 的各种头衔添加对应颜色的高光，同时控制头衔的显示/隐藏。(By [@Shapaper233](https://github.com/Shapaper233), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2212343133), Co-authored by huoyan1231 & PRO-2684)
+给 qq 的各种头衔添加对应颜色的高光，同时控制头衔的显示/隐藏。(By [@Shapaper233](https://github.com/Shapaper233), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2212343133), co-authored by @huoyan1231 & @PRO-2684)
 
 ![q-tag-enhancement](./images/q-tag-enhancement.png)
 

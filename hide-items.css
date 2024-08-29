@@ -2,9 +2,9 @@
 @name           Hide Items
 @description    隐藏一些不需要的项目，详见源代码注释
 @preprocessor   transitio
-@version        0.1.3
+@version        0.1.4
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#hide-items
-@author         PRO-2684, wilsendd
+@author         PRO-2684, wilsendd, YatFanLan
 @license     	gpl-3.0
 ==/UserStyle== */
 div.sidebar__menu > div:has(div.mail-item), /* 隐藏主页下侧侧栏的 QQ 邮箱 */
@@ -15,7 +15,8 @@ div.nav-bar > div.nav-item:has(img.svip-icon), /* 隐藏设置界面带 SVIP 的
 div.q-context-menu.more-menu > a.q-context-menu-item:has(span.setting-item-update), /* 隐藏菜单栏的检查更新 */
 div.sticker-panel__bar div.tabs-container-item:has(i[title="GIF热图"]), /* 隐藏表情菜单的 GIF 热图 */
 div#app > div.window-control-area > div:not([role="button"]), .narrow-toggler,  /* 隐藏窗口控制栏的小面板按钮 */
-.sidebar-tianshu-bubble { /* 隐藏聊天页面的广告 */
+.sidebar-tianshu-bubble, /* 隐藏聊天页面的广告 */
+.wifiphoto-content { /* 隐藏文件侧边栏下方的导入手机相册功能 */
     display: none;
 }
 div.nav.sidebar__nav > div.nav-item { /* 隐藏主页上侧侧栏的无法隐藏的频道和游戏 */
