@@ -2,7 +2,7 @@
 @name           Hide Items
 @description    隐藏一些不需要的项目，详见源代码注释
 @preprocessor   transitio
-@version        0.1.2
+@version        0.1.3
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#hide-items
 @author         PRO-2684, wilsendd
 @license     	gpl-3.0
@@ -34,6 +34,11 @@ div.bar-icon { /* 隐藏聊天页面上侧的语音通话，视频通话，屏�
         display: none;
     }
 }
-.file-manager-main .file-area > .file-area-list > .file-area-container > .file-area-container-list > .file-area-container-list-wrapper > .file-list-normal-container-wrapper > .file-list-scroll-outter > #file-manage-scroll-list > .group-file-banner {
-    display: none; /* 隐藏文件管理器的群在线文档 */
+.file-manager-main .file-area > .file-area-list > .file-area-container > .file-area-container-list > .file-area-container-list-wrapper > .file-list-normal-container-wrapper {
+    > .file-list-scroll-outter > #file-manage-scroll-list > .group-file-banner {
+        display: none; /* 隐藏文件管理器的群在线文档 */
+    }
+    > .file-list-header-container {
+        top: 0 !important; /* 偏移修复 */
+    }
 }
