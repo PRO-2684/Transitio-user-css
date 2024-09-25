@@ -7,9 +7,9 @@
 @author         Shapaper, huoyan1231, PRO-2684
 @license     	gpl-3.0
 @var percent box-shadow-opacity "高光透明度 (%)" 80
-@var color owner-color "群主高光颜色" "#FF9349"
-@var color admin-color "管理员高光颜色" "#397BAC"
-@var color special-color "专属头衔高光颜色" "#C27BFF"
+@var color owner-color "群主高光颜色" "#EDD5C3"
+@var color admin-color "管理员高光颜色" "#BAD9ED"
+@var color special-color "专属头衔高光颜色" "#E4DAF3"
 @var color others-color "普通成员高光颜色" "#E2E2E2"
 @var color bot-color "bot 颜色" "#0A64FF"
 @var checkbox hide-owner "隐藏群主 tag" [0, "inline-block", "none"]
