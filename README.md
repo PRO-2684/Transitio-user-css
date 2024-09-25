@@ -12,11 +12,11 @@
 
 艾特建议面板更为紧凑。
 
-## [customize-more-menu](./customize-more-menu.css)
+## [customize-more-menu](./customize-more-menu.styl)
 
 自定义隐藏主界面更多菜单中至多三个不需要的项目，需自行设置要隐藏的项目序号 (默认设置的序号过大，故不会隐藏任何项目)。注意：数序号时需算上通过其它样式隐藏的项目。
 
-## [customize-settings](./customize-settings.css)
+## [customize-settings](./customize-settings.styl)
 
 自定义隐藏 QQNT 原生设置界面选项，默认隐藏“超级调色盘”。
 

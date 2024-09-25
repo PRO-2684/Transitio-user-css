@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name           Customize Settings
+@description    自定义隐藏 QQNT 原生设置界面选项
+@preprocessor   stylus
+@version        0.2.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#customize-more-menu
+@author         PRO-2684
+@license     	gpl-3.0
+@var checkbox hideTuning "隐藏“通用”" 0
+@var checkbox hideRemind "隐藏“消息通知”" 0
+@var checkbox hideStorage "隐藏“存储管理”" 0
+@var checkbox hideKeyboard "隐藏“快捷键”" 0
+@var checkbox hideAdministeringUser "隐藏“权限设置”" 0
+@var checkbox hideSetting "隐藏“登录设置”" 0
+@var checkbox hideNavSkinNormal "隐藏“超级调色盘”" 1
+==/UserStyle== */
+@namespace xlink "http://www.w3.org/1999/xlink"; /* https://oreillymedia.github.io/Using_SVG/extras/ch03-namespaces.html */
+.setting-layout > .setting-tab > .nav-bar:not(.liteloader) > .nav-item {
+    if (hideTuning) {
+        &:has(use[xlink|href="/_upper_/resource/icons/tuning_24.svg#tuning_24"]) {
+            display: none; /* 通用 */
+        }
+    }
+    if (hideRemind) {
+        &:has(use[xlink|href="/_upper_/resource/icons/remind_24.svg#remind_24"]) {
+            display: none; /* 消息通知 */
+        }
+    }
+    if (hideStorage) {
+        &:has(use[xlink|href="/_upper_/resource/icons/storage_24.svg#storage_24"]) {
+            display: none; /* 存储管理 */
+        }
+    }
+    if (hideKeyboard) {
+        &:has(use[xlink|href="/_upper_/resource/icons/keyboard_24.svg#keyboard_24"]) {
+            display: none; /* 快捷键 */
+        }
+    }
+    if (hideAdministeringUser) {
+        &:has(use[xlink|href="/_upper_/resource/icons/administering_user_24.svg#administering_user_24"]) {
+            display: none; /* 权限设置 */
+        }
+    }
+    if (hideSetting) {
+        &:has(use[xlink|href="/_upper_/resource/icons/setting_24.svg#setting_24"]) {
+            display: none; /* 登录设置 */
+        }
+    }
+    if (hideNavSkinNormal) {
+        &:has(use[xlink|href="/_upper_/resource/icons/nav_skin_normal_24.svg#nav_skin_normal_24"]) {
+            display: none; /* 超级调色盘 */
+        }
+    }
+}

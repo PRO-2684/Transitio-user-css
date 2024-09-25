@@ -1,0 +1,66 @@
+/* ==UserStyle==
+@name           Customize More Menu
+@description    自定义隐藏 QQNT 主界面更多菜单中的项目
+@preprocessor   stylus
+@version        0.3.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#customize-more-menu
+@author         PRO-2684, wilsendd
+@license     	gpl-3.0
+@var checkbox hidePalette "隐藏“超级调色盘”" 1
+@var checkbox hideImportHistory "隐藏“导入历史消息”" 0
+@var checkbox hideBackup "隐藏“聊天记录迁移与备份”" 0
+@var checkbox hideUpdate "隐藏“检查更新”" 1
+@var checkbox hideHelp "隐藏“帮助”" 0
+@var checkbox hideLock "隐藏“锁定”" 0
+@var checkbox hideSettings "隐藏“设置”" 0
+@var checkbox hideAbout "隐藏“关于”" 0
+@var checkbox hideLogout "隐藏“退出账号”" 0
+==/UserStyle== */
+@namespace xlink "http://www.w3.org/1999/xlink"; /* https://oreillymedia.github.io/Using_SVG/extras/ch03-namespaces.html */
+div.q-context-menu.more-menu {
+    if (hidePalette) {
+        > a:has(use[xlink|href="/_upper_/resource/icons/nav_skin_normal_24.svg#nav_skin_normal_24"]) {
+            display: none; /* 超级调色盘 */
+        }
+    }
+    if (hideImportHistory) {
+        > a:has(use[xlink|href="/_upper_/resource/icons/download_24.svg#download_24"]) {
+            display: none; /* 导入历史消息 */
+        }
+    }
+    if (hideBackup) {
+        > a:has(use[xlink|href="/_upper_/resource/icons/computer_phone_24.svg#computer_phone_24"]) {
+            display: none; /* 聊天记录迁移与备份 */
+        }
+    }
+    if (hideUpdate) {
+        > a:has(use[xlink|href="/_upper_/resource/icons/update_24.svg#update_24"]) {
+            display: none; /* 检查更新 */
+        }
+    }
+    if (hideHelp) {
+        > div:has(use[xlink|href="/_upper_/resource/icons/question_mark_circle_24.svg#question_mark_circle_24"]) {
+            display: none; /* 帮助 */
+        }
+    }
+    if (hideLock) {
+        > a:has(use[xlink|href="/_upper_/resource/icons/lock_24.svg#lock_24"]) {
+            display: none; /* 锁定 */
+        }
+    }
+    if (hideSettings) {
+        > a:has(use[xlink|href="/_upper_/resource/icons/setting_24.svg#setting_24"]) {
+            display: none; /* 设置 */
+        }
+    }
+    if (hideAbout) {
+        > a:has(use[xlink|href="/_upper_/resource/icons/info_circle_24.svg#info_circle_24"]) {
+            display: none; /* 关于 */
+        }
+    }
+    if (hideLogout) {
+        > a:has(use[xlink|href="/_upper_/resource/icons/group_video_esc_24.svg#group_video_esc_24"]) {
+            display: none; /* 退出账号 */
+        }
+    }
+}
