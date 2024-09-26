@@ -2,7 +2,7 @@
 
 [Transitio](https://github.com/PRO-2684/transitio) user css 仓库。
 
-## [avatar-float](./avatar-float.css)
+## [avatar-float](./avatar-float.styl)
 
 头像浮动。
 
