@@ -7,6 +7,11 @@ module.exports = {
     rules: {
         // override/add rules settings here, such as:
         // "stylus/declaration-colon": "never"
-        "stylus/indentation": 4,
+        "stylus/indentation": [
+            4,
+            {
+                "severity": "warning"
+            }
+        ],
     },
 };
