@@ -1,0 +1,30 @@
+{
+  "name": "transitio-user-css",
+  "version": "0.1.0",
+  "description": "My UserStyles for [Transitio](https://github.com/PRO-2684/transitio)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PRO-2684/Transitio-user-css.git"
+  },
+  "keywords": [
+    "css",
+    "stylus",
+    "userstyle",
+    "liteloaderqqnt",
+    "llqqnt"
+  ],
+  "author": "PRO-2684",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/PRO-2684/Transitio-user-css/issues"
+  },
+  "homepage": "https://github.com/PRO-2684/Transitio-user-css#readme",
+  "devDependencies": {
+    "stylelint": "^16.9.0",
+    "stylelint-stylus": "^1.0.0"
+  }
+}

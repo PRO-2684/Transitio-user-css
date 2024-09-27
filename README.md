@@ -1,6 +1,17 @@
 # Transitio-user-css
 
-[Transitio](https://github.com/PRO-2684/transitio) user css 仓库。
+[Transitio](https://github.com/PRO-2684/transitio) 用户样式仓库。除了用户样式外，此仓库还包含了如下文件，方便使用 [Stylelint](https://stylelint.io/) 进行代码的高亮与格式化：
+
+```text
+.
+├── .vscode
+│   └── settings.json
+├── stylelint.config.js
+├── package.json
+└── package-lock.json
+```
+
+若您需要额外提供的代码的高亮与格式化功能，请在 VSCode 中安装 [Stylelint 插件](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)，随后执行 `npm install` 安装依赖。
 
 ## [avatar-float](./avatar-float.styl)
 
