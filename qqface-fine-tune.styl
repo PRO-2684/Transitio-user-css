@@ -1,0 +1,41 @@
+/* ==UserStyle==
+@name           QQ Face Fine Tune
+@description    QQ 表情微调
+@preprocessor   stylus
+@version        0.3.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#qqface-fine-tune
+@author         PRO-2684
+@license     	gpl-3.0
+@var checkbox useSystemEmoji "使用系统 Emoji (与字体)" 1
+@var number recentsPanelGap"最近表情面板间距 (em)" [0.5, 0.1, 5, 0.1, "em"]
+@var number recentsPanelWidth "最近表情面板宽度 (em)" [12, 1, 20, 0.5, "em"]
+@var number suggestionPanelWidth "表情建议面板宽度 (em)" [10, 1, 20, 0.5, "em"]
+==/UserStyle== */
+/* 使用系统 Emoji (与字体) */
+if (useSystemEmoji) {
+    body, html {
+        font-family: system-ui, PingFang SC, PingFangSC-Regular, Microsoft YaHei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif, Apple Braille;
+    }
+}
+/* 最近表情面板更为紧凑 */
+.sticker-panel > .stickers.recent-used {
+    padding: recentsPanelGap !important;
+    row-gap: recentsPanelGap;
+    column-gap: recentsPanelGap;
+    max-width: recentsPanelWidth;
+}
+/* 表情建议面板宽度调小 */
+.editor-qqface-short-panel {
+    width: suggestionPanelWidth !important;
+    /* 表情建议面板更为紧凑 */
+    .viewport-list__inner {
+        gap: 0px;
+        padding: 0px;
+    }
+}
+.item .editor-qqface-short-panel__item {
+    margin: 0px;
+    .item-wrap {
+        padding: 0px;
+    }
+}

@@ -105,7 +105,7 @@
 
 ![q-tag-enhancement](./images/q-tag-enhancement.png)
 
-### [qqface-fine-tune](./qqface-fine-tune.css)
+### [qqface-fine-tune](./qqface-fine-tune.styl)
 
 QQ 表情微调：
 
