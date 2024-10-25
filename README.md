@@ -146,7 +146,9 @@ QQ 表情微调：
 ## 精简聊天框
 https://github.com/YatFanLan/Simplify-chat-boxes
 
-![Uploading QQ_1729845872192.png…]()
+![QQ_1729846066936](https://github.com/user-attachments/assets/96c00fc5-81f2-4aa9-8c1a-a16ebe4eea1f)
+
+
 
 
 ```text
