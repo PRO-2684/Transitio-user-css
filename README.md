@@ -143,6 +143,9 @@ QQ 表情微调：
 
 除了用户样式外，此仓库还包含了如下文件，方便使用 [Stylelint](https://stylelint.io/) 进行代码的高亮与格式化：
 
+https://github.com/YatFanLan/Simplify-chat-boxes
+精简聊天框
+![Uploading QQ_1729845872192.png…]()
 
 
 ```text
