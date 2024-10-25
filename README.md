@@ -135,7 +135,7 @@ QQ 表情微调：
 
 给可变字体添加一定的字宽，使用前请确保 litetools 自定义字体使用的是可变字体（可自助更改）。(By [@Shapaper233](https://github.com/Shapaper233), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2212343133))
 
-## 精简聊天框(./Simplify-chat-boxes)
+## [Simplify chat boxes](./Simplify-chat-boxes)
 ![QQ_1729846491554](https://github.com/user-attachments/assets/ca274a33-6c91-45bf-a240-741886e3c352)
 
 
