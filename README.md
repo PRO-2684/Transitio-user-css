@@ -7,7 +7,7 @@
 ### [avatar-float](./avatar-float.styl)
 
 
-### [Simplify-chat-boxes](./Simplify-chat-boxes)
+### [Simplify-chat-boxes](./Simplify chat boxes.css)
 精简聊天框按钮
 
 
