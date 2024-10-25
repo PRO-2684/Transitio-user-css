@@ -6,6 +6,8 @@
 
 ### [avatar-float](./avatar-float.styl)
 
+精简聊天框按钮
+![Simplify-chat-boxes](./Simplify-chat-boxes)
 头像浮动。
 
 ![avatar-float](./images/avatar-float.jpg)
@@ -141,6 +143,8 @@ QQ 表情微调：
 ## 开发工具
 
 除了用户样式外，此仓库还包含了如下文件，方便使用 [Stylelint](https://stylelint.io/) 进行代码的高亮与格式化：
+
+
 
 ```text
 .
