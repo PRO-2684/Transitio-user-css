@@ -1,6 +1,6 @@
 /* ==UserStyle==
-@name           Hide Items
-@description    隐藏聊天窗口中一些顽固选项(还有侧边栏的两个按钮)
+@name           Simplify chat boxes
+@description    隐藏聊天窗口的按钮
 @preprocessor   transitio
 @version        0.1.0
 @homepageURL    https://github.com/YatFanLan/Simplify-chat-boxes
@@ -25,6 +25,9 @@
 @var checkbox hide-Invite-to-join-the-group "隐藏聊天框(上方)(群聊)“邀请加群”选项" [1, "inline-flex", "none"]
 @var checkbox hide-Party-apps "隐藏聊天框(上方)(群聊)“群应用”选项" [1, "inline-flex", "none"]
 @var checkbox hide-Robot-nstructions "隐藏聊天框(下方)(群聊)“机器人”选项" [1, "inline-flex", "none"]
+
+@var checkbox hide-Block-painting "隐藏临时会话聊天框(上方)“屏蔽会话”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Add-friend "隐藏临时会话聊天框(上方)“添加好友”选项" [1, "inline-flex", "none"]
 ==/UserStyle== */
 
  [bf-label-inner="true"][aria-label="表情"] {
@@ -102,5 +105,10 @@
 }
  [bf-label-inner="true"][aria-label="机器人指令"] {
     display: var(--hide-Robot-nstructions) !important;   /* 机器人指令 */
+}	
+ [bf-label-inner="true"][aria-label="屏蔽会话"] {
+    display: var(--hide-Block-painting) !important;   /* 屏蔽会话 */
 }
-
+ [bf-label-inner="true"][aria-label="添加好友"] {
+    display: var(--hide-Add-friend) !important;   /* 添加好友 */
+}
