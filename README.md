@@ -135,6 +135,10 @@ QQ 表情微调：
 
 给可变字体添加一定的字宽，使用前请确保 litetools 自定义字体使用的是可变字体（可自助更改）。(By [@Shapaper233](https://github.com/Shapaper233), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2212343133))
 
+## 精简聊天框
+https://github.com/YatFanLan/Simplify-chat-boxes
+![QQ_1729846066936](https://github.com/user-attachments/assets/96c00fc5-81f2-4aa9-8c1a-a16ebe4eea1f)
+
 ### [vue-highlight](./vue-highlight.css)
 
 高亮 Vue components，用于开发目的。
@@ -143,10 +147,7 @@ QQ 表情微调：
 
 除了用户样式外，此仓库还包含了如下文件，方便使用 [Stylelint](https://stylelint.io/) 进行代码的高亮与格式化：
 
-## 精简聊天框
-https://github.com/YatFanLan/Simplify-chat-boxes
 
-![QQ_1729846066936](https://github.com/user-attachments/assets/96c00fc5-81f2-4aa9-8c1a-a16ebe4eea1f)
 
 
 
