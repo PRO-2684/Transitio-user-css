@@ -137,7 +137,8 @@ QQ 表情微调：
 
 ## 精简聊天框
 https://github.com/YatFanLan/Simplify-chat-boxes
-![QQ_1729846066936](https://github.com/user-attachments/assets/96c00fc5-81f2-4aa9-8c1a-a16ebe4eea1f)
+![QQ_1729846491554](https://github.com/user-attachments/assets/ca274a33-6c91-45bf-a240-741886e3c352)
+
 
 ### [vue-highlight](./vue-highlight.css)
 
