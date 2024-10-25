@@ -150,7 +150,11 @@ QQ 表情微调：
 ├── package.json
 └── package-lock.json
 ```
+精简聊天框按钮
+### [Simplify-chat-boxes](./Simplify-chat-boxes)
 
 若您需要额外提供的代码的高亮与格式化功能，请在 VSCode 中安装 [Stylelint 插件](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)，随后执行 `npm install` 安装依赖。
 
 与默认的 `stylelint-stylus/recommended` 规则集不同的是，此仓库的默认缩进为 4 个空格，并且严重程度被设置为 `warning`。
+
+
