@@ -1,0 +1,114 @@
+/* ==UserStyle==
+@name           Simplify chat boxes
+@description    隐藏聊天窗口的按钮
+@preprocessor   transitio
+@version        0.1.0
+@homepageURL    https://github.com/YatFanLan/Simplify-chat-boxes
+@author      YatFanLan
+@license     	gpl-3.0
+@var checkbox hide-expression "隐藏聊天框(下方)“表情”选项" [0, "inline-flex", "none"]
+@var checkbox hide-collect "隐藏聊天框(下方)“截图 Ctrl + Alt + 1”选项" [0, "inline-flex", "none"]
+@var checkbox hide-file "隐藏聊天框(下方)“文件”选项" [0, "inline-flex", "none"]
+@var checkbox hide-picture "隐藏聊天框(下方)“图片”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Window-jitter "隐藏聊天框(下方)“窗口抖动”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Red-envelope "隐藏聊天框(下方)“红包”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Voice-message "隐藏聊天框(下方)“语音消息”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Chat-history "隐藏聊天框(下方)“聊天记录”选项" [0, "inline-flex", "none"]
+
+@var checkbox hide-voice-call "隐藏聊天框(上方)“语音通话”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Video-call "隐藏聊天框(上方)“视频通话”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Screen-sharing "隐藏聊天框(上方)“屏幕共享”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Remote-assistance "隐藏聊天框(上方)“远程协助”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Initiate-a-group-chat "隐藏聊天框(上方)“发起群聊”选项" [1, "inline-flex", "none"]
+@var checkbox hide-More "隐藏聊天框(上方)“更多”选项" [0, "inline-flex", "none"]
+
+@var checkbox hide-Invite-to-join-the-group "隐藏聊天框(上方)(群聊)“邀请加群”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Party-apps "隐藏聊天框(上方)(群聊)“群应用”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Robot-nstructions "隐藏聊天框(下方)(群聊)“机器人”选项" [1, "inline-flex", "none"]
+
+@var checkbox hide-Block-painting "隐藏临时会话聊天框(上方)“屏蔽会话”选项" [1, "inline-flex", "none"]
+@var checkbox hide-Add-friend "隐藏临时会话聊天框(上方)“添加好友”选项" [1, "inline-flex", "none"]
+==/UserStyle== */
+
+ [bf-label-inner="true"][aria-label="表情"] {
+    display: var(--hide-expression) !important;   /* 表情 */
+}
+
+[bf-label-inner="true"][aria-label="截图 Ctrl + Alt + 1"] {
+    display: var(--hide-collect) !important;   /* 截图 Ctrl + Alt + 1 */
+}
+#id-func-bar-screenshot-arrow {
+   display: var(--hide-collect) !important;   /* 截图 Ctrl + Alt + 1 */
+}
+
+ [bf-label-inner="true"][aria-label="文件"] {
+    display: var(--hide-file) !important;   /* 文件 */
+} 
+#id-func-bar-folder-arrow {
+   display: var(--hide-file) !important;   /* 文件 */
+}
+
+#id-func-bar-image[bf-label-inner="true"][aria-label="图片"] {
+    display: var(--hide-picture) !important;   /* 图片 */
+}
+
+ [bf-label-inner="true"][aria-label="窗口抖动"] {
+    display: var(--hide-Window-jitter) !important;   /* 窗口抖动 */
+}
+
+ [bf-label-inner="true"][aria-label="红包"] {
+    display: var(--hide-Red-envelope) !important;   /* 红包 */
+}
+
+ [bf-label-inner="true"][aria-label="语音消息"] {
+    display: var(--hide-Voice-message) !important;   /* 语音消息 */
+}
+
+ [bf-label-inner="true"][aria-label="聊天记录"] {
+    display: var(--hide-Chat-history) !important;   /* 聊天记录 */
+}
+
+
+
+ [bf-label-inner="true"][aria-label="语音通话"] {
+    display: var(--hide-voice-call) !important;   /* 语音通话 */
+}
+
+ [bf-label-inner="true"][aria-label="视频通话"] {
+    display: var(--hide-Video-call) !important;   /* 视频通话 */
+}
+
+ [bf-label-inner="true"][aria-label="屏幕共享"] {
+    display: var(--hide-Screen-sharing) !important;   /* 屏幕共享 */
+}
+
+ [bf-label-inner="true"][aria-label="远程协助"]{
+ display: var(--hide-Remote-assistance) !important;   /* 远程协助 */
+}
+#id-func-bar-remote_control-arrow {
+   display: var(--hide-Remote-assistance) !important;   /* 远程协助 */
+}
+
+ [bf-label-inner="true"][aria-label="发起群聊"] {
+    display: var(--hide-Initiate-a-group-chat) !important;   /* 发起群聊 */
+}
+
+ #id-func-bar-more {
+    display: var(--hide-More) !important;   /* 更多 */
+}
+ #id-func-bar-group_application-arrow,
+ [bf-label-inner="true"][aria-label="群应用"] {
+    display: var(--hide-Party-apps) !important;   /* 群应用 */
+}
+ [bf-label-inner="true"][aria-label="邀请加群"] {
+    display: var(--hide-Invite-to-join-the-group) !important;   /* 邀请加群 */
+}
+ [bf-label-inner="true"][aria-label="机器人指令"] {
+    display: var(--hide-Robot-nstructions) !important;   /* 机器人指令 */
+}	
+ [bf-label-inner="true"][aria-label="屏蔽会话"] {
+    display: var(--hide-Block-painting) !important;   /* 屏蔽会话 */
+}
+ [bf-label-inner="true"][aria-label="添加好友"] {
+    display: var(--hide-Add-friend) !important;   /* 添加好友 */
+}
