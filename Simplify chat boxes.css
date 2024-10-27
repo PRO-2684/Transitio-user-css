@@ -112,3 +112,7 @@
  [bf-label-inner="true"][aria-label="添加好友"] {
     display: var(--hide-Add-friend) !important;   /* 添加好友 */
 }
+/*设置禁止聊天框滚动*/
+.q-scroll-view.scroll-view--show-scrollbar.msg-input {
+  overflow: hidden;
+}
