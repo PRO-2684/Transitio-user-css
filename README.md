@@ -6,7 +6,7 @@
 
 ### [avatar-float](./avatar-float.styl)
 
-头像浮动。
+头像相关的调整：头像浮动、头像边框等。
 
 ![avatar-float](./images/avatar-float.jpg)
 

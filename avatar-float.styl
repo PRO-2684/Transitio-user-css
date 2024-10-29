@@ -1,14 +1,15 @@
 /* ==UserStyle==
 @name           Avatar Float
-@description    头像浮动
+@description    头像相关的调整：头像浮动、头像边框等
 @preprocessor   stylus
-@version        0.3.0
+@version        0.3.1
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#avatar-float
 @author         PRO-2684
 @license     	gpl-3.0
 @var range topOffset1 "头像聊天界面顶部偏移 (px)" [8, 0, 100, 1, "px"]
 @var range topOffset2 "头像聊天记录顶部偏移 (px)" [46, 0, 100, 1, "px"]
 @var range topOffset3 "多选框聊天界面顶部偏移 (px)" [18, 0, 100, 1, "px"]
+@var text avatarOutline "头像边框" "1px solid var(--on_bg_text)"
 ==/UserStyle== */
 #ml-root {
     .ml-list {
@@ -25,4 +26,8 @@
         position: sticky;
         top: topOffset3;
     }
+}
+
+.avatar {
+    outline: avatarOutline;
 }
