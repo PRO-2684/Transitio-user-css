@@ -26,6 +26,10 @@
 
 演示模式，来源于 https://github.com/qianxuu/LiteLoaderQQNT-Plugin-Demo-mode 。
 
+### [focus-visible](./focus-visible.styl)
+
+为聚焦元素添加可见的边框。
+
 ### [hide-emoticon-response](./hide-emoticon-response.css)
 
 移除右键消息上的表情回应。(By [@InfSein](https://github.com/InfSein), [Ref](https://github.com/PRO-2684/transitio/issues/4#issuecomment-2207904703))

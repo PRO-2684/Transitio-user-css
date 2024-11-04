@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name           Focus Visible
+@description    为聚焦元素添加可见的边框
+@preprocessor   stylus
+@version        0.1.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#focus-visible
+@author         PRO-2684
+@license     	gpl-3.0
+@var text focusOutline "聚焦元素边框" "1px dashed cyan"
+@var range focusOffset "聚焦元素边框偏移 (px)" [1, 0, 100, 1, "px"]
+==/UserStyle== */
+
+*:focus-visible {
+    outline: focusOutline !important;
+    outline-offset: focusOffset;
+}

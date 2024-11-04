@@ -2,7 +2,7 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.2.8
+@version        0.2.9
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
@@ -50,6 +50,22 @@ div.reply-element, /* 回复消息 */
 .sys-status-setting__container .custom-status-option, /* 自定义状态项目 */
 .menu-content-wrap > .menu-content { /* 忘了是啥 */
     transition: background var(--duration)s var(--timing-function-global);
+}
+.viewport-list__inner > div { /* 列表项目 (会话列表项目) */
+    transition: background var(--duration)s var(--timing-function-global);
+    > .item__content {
+        transition: background var(--duration)s var(--timing-function-global);
+        > .item__info {
+            > .item__summary {
+                transition: color var(--duration)s var(--timing-function-global);
+            }
+            > .item__title {
+                > .main-info, > .secondary-info {
+                    transition: color var(--duration)s var(--timing-function-global);
+                }
+            }
+        }
+    }
 }
 .text-element .text-element--at, /* 艾特 */
 .text-element .text-link, /* 链接 */
