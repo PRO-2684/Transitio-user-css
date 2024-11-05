@@ -2,12 +2,13 @@
 @name           Transparent
 @description    透明化部分元素
 @preprocessor   transitio
-@version        0.2.2
+@version        0.2.3
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transparent
 @author         PRO-2684
 @license     	gpl-3.0
 @var percent opacity-1 "透明度 1" 90
 @var percent opacity-2 "透明度 2" 80
+@var percent opacity-3 "透明度 3" 40
 ==/UserStyle== */
 .q-menu, /* 菜单 */
 .q-context-menu:not(.is-pure), /* 菜单 */
@@ -26,6 +27,9 @@
 .q-notification, /* 通知 */
 .q-float-card { /* 浮动卡片 (QQ 机器人指令) */
     opacity: var(--opacity-2);
+}
+.babble { /* 时间、戳一戳等的气泡 */
+    background-color: rgb(from var(--nt_blur_bottom_superlight_2_30_2_alpha) r g b / var(--opacity-3));
 }
 /* 移除部分样式 */
 .q-popover, .search-result, .container .more-panel .side-panel {
