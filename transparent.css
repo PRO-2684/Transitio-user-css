@@ -8,7 +8,7 @@
 @license     	gpl-3.0
 @var percent opacity-1 "透明度 1" 90
 @var percent opacity-2 "透明度 2" 80
-@var percent opacity-3 "透明度 3" 40
+@var percent opacity-3 "透明度 3" 10
 ==/UserStyle== */
 .q-menu, /* 菜单 */
 .q-context-menu:not(.is-pure), /* 菜单 */
