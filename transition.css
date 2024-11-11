@@ -2,7 +2,7 @@
 @name           Transition
 @description    添加过渡动画
 @preprocessor   transitio
-@version        0.3.0
+@version        0.3.1
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transition
 @author         PRO-2684
 @license     	gpl-3.0
@@ -151,7 +151,7 @@ a { /* 链接 */
         opacity: 0;
         transition-duration: var(--duration)s;
         transition-timing-function: var(--timing-function-global);
-        transition-property: opacity, display;
+        transition-property: opacity, visibility;
         transition-behavior: allow-discrete;
     }
     &:hover .universal-repeater {
