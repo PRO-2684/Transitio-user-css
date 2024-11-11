@@ -2,7 +2,7 @@
 @name           Hide Items
 @description    隐藏一些不需要的项目，详见源代码注释
 @preprocessor   none
-@version        0.1.5
+@version        0.1.6
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#hide-items
 @author         PRO-2684, wilsendd, YatFanLan
 @license     	gpl-3.0
@@ -19,9 +19,10 @@ div#app > div.window-control-area > div:not([role="button"]), .narrow-toggler,  
 .wifiphoto-content { /* 隐藏文件侧边栏下方的导入手机相册功能 */
     display: none;
 }
-div.nav.sidebar__nav > div.nav-item { /* 隐藏主页上侧侧栏的无法隐藏的频道和游戏 */
+div.nav.sidebar__nav > div.nav-item { /* 隐藏主页上侧侧栏的无法隐藏的频道、游戏、更多 */
     &[aria-label="频道"],
-    &[aria-label="游戏"] {
+    &[aria-label="游戏"],
+    &[aria-label="更多"] {
         display: none;
     }
 }
