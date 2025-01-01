@@ -124,6 +124,10 @@ QQ 表情微调：
 
 让自己的名字变为彩虹色。
 
+### [simple-nudge](./simple-nudge.styl)
+
+简易拍一拍。
+
 ### [transition](./transition.css)
 
 添加过渡动画。可自定义过渡时间。

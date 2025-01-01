@@ -1,0 +1,32 @@
+/* ==UserStyle==
+@name           Simple Nudge
+@description    简易拍一拍
+@preprocessor   stylus
+@version        0.1.0
+@homepageURL    https://github.com/PRO-2684/Transitio-user-css/#simple-pat
+@author         PRO-2684
+@license     	gpl-3.0
+@var checkbox hideSimpleNudgeIcon "隐藏拍一拍双击动作图标 (普通拍一拍)" 1
+@var checkbox hideAdvancedNudgeIcon "隐藏拍一拍创意玩法动图 (高级拍一拍)" 1
+@var text advancedNudgeText "创意玩法替代文本" "'拍了拍'"
+==/UserStyle== */
+
+.message > .gray-tip-message > .gray-tip-content {
+    if (hideSimpleNudgeIcon) {
+        > .gray-tip-img[src^="http://tianquan.gtimg.cn/nudgeaction"] { /* 拍一拍双击动作图标 (普通拍一拍) */
+            display: none;
+        }
+    }
+    if (hideAdvancedNudgeIcon) {
+        &:has(> .gray-tip-img[src^="http://tianquan.gtimg.cn/nudgeeffect"]) { /* 拍一拍创意玩法动图 (高级拍一拍) */
+            > .gray-tip-img[src^="http://tianquan.gtimg.cn/nudgeeffect"] { /* 隐藏图标 */
+                display: none;
+            }
+            > .gray-tip-action:first-of-type::after { /* 展示拍一拍文本 */
+                color: var(--on_bg_text);
+                cursor: default;
+                content: advancedNudgeText;
+            }
+        }
+    }
+}
