@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Hide Items
 @description    隐藏一些不需要的项目，详见源代码注释
-@preprocessor   none
+@preprocessor   transitio
 @version        0.1.7
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#hide-items
 @author         PRO-2684, wilsendd, YatFanLan
@@ -25,6 +25,10 @@ div.nav.sidebar__nav > div.nav-item { /* 隐藏主页上侧侧栏的无法隐藏
     /* 此处“空间”失效，原因是 tx 移除了“空间”图标的 aria-label  */
     &[aria-label="更多"] {
         display: none;
+    }
+    sub.q-badge-dot {
+    /* 清除“空间”可能的红点同时不清除消息的未读条数红点  */
+        display: none !important;
     }
 }
 div.bar-icon { /* 隐藏聊天页面上侧的语音通话，视频通话，屏幕共享，机器人指令；隐藏输入框上侧的截图，语音按钮 */
@@ -57,6 +61,8 @@ html > body.q-theme-tokens-light > div.lite-tools-vue-component.vue-component > 
     display: none;
 }
 
+
+/*  清除左下角菜单栏内的所有红点*/
 div.func-menu sub.q-badge-sub, 
 div.func-menu sub.q-badge-dot,
 div.func-menu sub.q-badge-dot__large,
