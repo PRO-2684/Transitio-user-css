@@ -61,7 +61,7 @@ div#app > div.container:nth-of-type(2) > div.nav-bar-container.vibrancy:nth-of-t
 }
 
 
-html > body.q-theme-tokens-light > div.lite-tools-vue-component.vue-component > div.container > div.nav-bar-container.lite-tools-vue-component.vue-component > div > div.nav-item > div > div.nav-item-container.lite-tools-vue-component.vue-component:nth-of-type(2) {
+html > body > div > div.container > div.nav-bar-container > div > div.nav-item > div > div.nav-item-container:nth-of-type(2) {
 /*  隐藏左边 tab 的“腾讯文档” */
 /*  P.S. 暂时还没找到能仅通过 css 来隐藏同一层级内的单一元素的方法，故此处的“群文件” tab 也会被一并隐藏  */
     display: none;
