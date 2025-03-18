@@ -2,7 +2,7 @@
 @name           Hide Items
 @description    隐藏一些不需要的项目，详见源代码注释
 @preprocessor   none
-@version        0.1.8
+@version        0.1.9
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#hide-items
 @author         PRO-2684, wilsendd, YatFanLan
 @license        gpl-3.0
@@ -55,7 +55,13 @@ div.bar-icon { /* 隐藏聊天页面上侧的语音通话，视频通话，屏�
     display: none; 
 }
 
-html > body.q-theme-tokens-light > div.lite-tools-vue-component.vue-component > div.container > div.nav-bar-container.lite-tools-vue-component.vue-component > div > div.nav-item > div > div.nav-item-container.lite-tools-vue-component.vue-component:last-child {
+div#app > div.container:nth-of-type(2) > div.nav-bar-container.vibrancy:nth-of-type(1) > div:nth-of-type(2) > div.wifiphoto-btn {
+/*  修复隐藏旧版(29804)文件管理器左下方的“导入手机相册”工具栏失效  */
+    display: none;
+}
+
+
+html > body > div > div.container > div.nav-bar-container > div > div.nav-item > div > div.nav-item-container:nth-of-type(2) {
 /*  隐藏左边 tab 的“腾讯文档” */
 /*  P.S. 暂时还没找到能仅通过 css 来隐藏同一层级内的单一元素的方法，故此处的“群文件” tab 也会被一并隐藏  */
     display: none;
