@@ -49,8 +49,9 @@
 - 左上角的 QQ Logo
 - 群在线文档
 - 文件侧边栏下方的导入手机相册功能
+- 新版（32869）文件侧边栏上方的工具栏 (By [@Lucas04-nhr](https://github.com/Lucas04-nhr))
 
-若有需要，可以自行注释/删除掉相应代码。(By [@PRO-2684](https://github.com/PRO-2684), co-authored by @wilsendd & @YatFanLan & @Lucas04-nhr)
+若有需要，可以自行注释/删除掉相应代码。(By [@PRO-2684](https://github.com/PRO-2684), co-authored by @wilsendd & @YatFanLan)
 
 ### [hide-lock](./hide-lock.css)
 
