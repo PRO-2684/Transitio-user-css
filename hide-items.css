@@ -7,7 +7,7 @@
 @author         PRO-2684, wilsendd, YatFanLan
 @license        gpl-3.0
 ==/UserStyle== */
-div.sidebar__menu > div:has(div.mail-item), /* QQ 邮箱 */ 
+div.sidebar__menu > div:has(div.mail-item), /* QQ 邮箱 */
 div.nav-bar > div.nav-item:has(img.svip-icon), /* 隐藏设置界面带 SVIP 的项目 (超级调色盘) */
 .qq-logo { /* 隐藏 QQ 左上角的 Logo */
     display: none !important;
@@ -32,8 +32,6 @@ div.nav.sidebar__nav > div.nav-item { /* 隐藏主页上侧侧栏的无法隐藏
     /* 清除“空间”可能的红点同时不清除消息的未读条数红点  */
         display: none !important;
     }
-
-
 }
 
 /*    隐藏主页上侧侧栏的无法隐藏的空间、频道、更多 */
@@ -48,9 +46,7 @@ div.nav.sidebar__nav > div.nav-item:nth-of-type(5) {
     /* 清除“空间”可能的红点同时不清除消息的未读条数红点  */
         display: none !important;
     }
-
 }
-
 
 /*  用 nth-of-type 伪类的方式文件及收藏菜单以及该部分的所有红点    */
 /*  1:邮箱 2:文件 3:收藏 4:更多*/
@@ -66,15 +62,13 @@ div.nav.sidebar__nav > div.nav-item:nth-of-type(5) {
     }
 }
 
-
-/*      此处可能与部分插件不兼容，导致其他插件的展示元素出现偏移  */
+/*  此处可能与部分插件不兼容，导致其他插件的展示元素出现偏移  */
 nav.sidebar-nav > div.sidebar-wrapper > div.sidebar__lower > div.func-menu.sidebar__menu > div.func-menu__item_wrap > div.sidebar-tooltips > div.func-menu__item > div.icon-item {
     &[aria-label="文件管理器"],
     &[aria-label="收藏"] {
         display: none !important;
     }
 }
-
 
 div.bar-icon { /* 隐藏聊天页面上侧的语音通话，视频通话，屏幕共享，机器人指令；隐藏输入框上侧的截图，语音按钮 */
     &:has(#id-func-bar-telephone),
@@ -96,7 +90,7 @@ div.bar-icon { /* 隐藏聊天页面上侧的语音通话，视频通话，屏�
     }
 }
 
-.file-manager-main > .file-area > .file-area-shortcut  {
+.file-manager-main > .file-area > .file-area-shortcut {
 /*  隐藏新版(32869+)的新式文件管理器上方工具栏  */
     display: none; 
 }
@@ -105,7 +99,6 @@ div#app > div.container:nth-of-type(2) > div.nav-bar-container.vibrancy:nth-of-t
 /*  修复隐藏旧版(31363-)文件管理器左下方的“导入手机相册”工具栏失效  */
     display: none;
 }
-
 
 html > body > div > div.container > div.nav-bar-container > div > div.nav-item > div > div.nav-item-container:nth-of-type(2) {
 /*  隐藏左边 tab 的“腾讯文档” */
