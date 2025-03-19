@@ -7,7 +7,6 @@
 @author         PRO-2684, wilsendd, YatFanLan
 @license        gpl-3.0
 ==/UserStyle== */
-div.sidebar__menu > div:has(div.mail-item), /* 隐藏主页下侧侧栏的 QQ 邮箱 */
 div.nav-bar > div.nav-item:has(img.svip-icon), /* 隐藏设置界面带 SVIP 的项目 (超级调色盘) */
 .qq-logo { /* 隐藏 QQ 左上角的 Logo */
     display: none !important;
@@ -37,9 +36,10 @@ div.nav.sidebar__nav > div.nav-item:nth-of-type(5) {
 }
 
 /*  用 nth-of-type 伪类的方式文件及收藏菜单以及该部分的所有红点    */
-/*  3:邮箱 4:文件 5:收藏*/
-.func-menu__item_wrap:nth-of-type(4),
-.func-menu__item_wrap:nth-of-type(5) {
+/*  1:邮箱 2:文件 3:收藏 4:更多*/
+.func-menu__item_wrap:nth-of-type(1),
+.func-menu__item_wrap:nth-of-type(2),
+.func-menu__item_wrap:nth-of-type(3) {
     display: none !important;
     sub.q-badge-sub, 
     sub.q-badge-dot,
