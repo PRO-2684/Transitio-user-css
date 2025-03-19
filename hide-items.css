@@ -7,6 +7,7 @@
 @author         PRO-2684, wilsendd, YatFanLan
 @license        gpl-3.0
 ==/UserStyle== */
+div.sidebar__menu > div:has(div.mail-item), /* QQ 邮箱 */ 
 div.nav-bar > div.nav-item:has(img.svip-icon), /* 隐藏设置界面带 SVIP 的项目 (超级调色盘) */
 .qq-logo { /* 隐藏 QQ 左上角的 Logo */
     display: none !important;
@@ -19,6 +20,21 @@ div#app > div.window-control-area > div:not([role="button"]), .narrow-toggler,  
     display: none;
 }
 
+div.nav.sidebar__nav > div.nav-item { /* 隐藏主页上侧侧栏的无法隐藏的频道、游戏、更多 */
+    &[aria-label="频道"],
+    &[aria-label="空间"], 
+    /* 此处“空间”失效，原因是 tx 移除了“空间”图标的 aria-label  */
+    &[aria-label="更多"] {
+        display: none;
+    }
+
+    sub.q-badge-dot {
+    /* 清除“空间”可能的红点同时不清除消息的未读条数红点  */
+        display: none !important;
+    }
+
+
+}
 
 /*    隐藏主页上侧侧栏的无法隐藏的空间、频道、更多 */
 /*    用 nth-of-type 伪类的方式隐藏“空间”，"频道"，"更多"图标*/
@@ -35,6 +51,7 @@ div.nav.sidebar__nav > div.nav-item:nth-of-type(5) {
 
 }
 
+
 /*  用 nth-of-type 伪类的方式文件及收藏菜单以及该部分的所有红点    */
 /*  1:邮箱 2:文件 3:收藏 4:更多*/
 .func-menu__item_wrap:nth-of-type(1),
@@ -48,6 +65,16 @@ div.nav.sidebar__nav > div.nav-item:nth-of-type(5) {
         display: none !important;
     }
 }
+
+
+/*      此处可能与部分插件不兼容，导致其他插件的展示元素出现偏移  */
+nav.sidebar-nav > div.sidebar-wrapper > div.sidebar__lower > div.func-menu.sidebar__menu > div.func-menu__item_wrap > div.sidebar-tooltips > div.func-menu__item > div.icon-item {
+    &[aria-label="文件管理器"],
+    &[aria-label="收藏"] {
+        display: none !important;
+    }
+}
+
 
 div.bar-icon { /* 隐藏聊天页面上侧的语音通话，视频通话，屏幕共享，机器人指令；隐藏输入框上侧的截图，语音按钮 */
     &:has(#id-func-bar-telephone),
