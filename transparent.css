@@ -2,9 +2,9 @@
 @name           Transparent
 @description    透明化部分元素
 @preprocessor   transitio
-@version        0.2.3
+@version        0.2.4
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#transparent
-@author         PRO-2684
+@author         PRO-2684， Lucas04-nhr
 @license     	gpl-3.0
 @var percent opacity-1 "透明度 1" 90
 @var percent opacity-2 "透明度 2" 80
