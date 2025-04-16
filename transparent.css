@@ -14,7 +14,9 @@
 .q-context-menu:not(.is-pure), /* 菜单 */
 .q-context-sub-menu__container:not(.is-pure), /* 子菜单 */
 .expression-panel > .sticker-panel-ref.expression-panel-inner > .sticker-panel, /* 表情面板 */
-[class^=side-panel], /* 侧栏 */
+[class^='side-panel'], /* 侧栏 */
+[class^='file'], /* 文件 */
+[class^='msg-content-container'], /* 聊天气泡 */
 .q-popover, /* 弹出框 */
 .q-dialog { /* 对话框 */
     opacity: var(--opacity-1);
