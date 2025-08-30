@@ -2,15 +2,15 @@
 @name           q-tag-enhancement
 @description    给 qq 的各种头衔添加对应颜色的高光，同时控制头衔的显示/隐藏
 @preprocessor   stylus
-@version        0.4.0
+@version        0.4.1
 @homepageURL    https://github.com/PRO-2684/Transitio-user-css/#q-tag-enhancement
 @author         Shapaper, huoyan1231, PRO-2684
 @license     	gpl-3.0
-@var range boxShadowOpacity "高光透明度 (%)" [80, 0, 100, 1, "%"]
-@var color ownerColor "群主高光颜色" #EDD5C3
-@var color adminColor "管理员高光颜色" #BAD9ED
-@var color specialColor "专属头衔高光颜色" #E4DAF3
-@var color othersColor "普通成员高光颜色" #E2E2E2
+@var range boxShadowOpacity "高光透明度 (%)" [20, 0, 100, 1, "%"]
+@var color ownerColor "群主高光颜色" #FF862E
+@var color adminColor "管理员高光颜色" #74A9F6
+@var color specialColor "专属头衔高光颜色" #AA76F6
+@var color othersColor "普通成员高光颜色" #9E9E9E
 @var color botColor "bot 颜色" #0A64FF
 @var checkbox hideOwner "隐藏群主 tag" 0
 @var checkbox hideAdmin "隐藏管理员 tag" 0
@@ -23,7 +23,7 @@ mapping = {
     orange: (ownerColor hideOwner), /* 群主 */
     blue: (adminColor hideAdmin), /* 管理员 */
     purple: (specialColor hideSpecial), /* 专属头衔 */
-    grey: (othersColor hideOthers), /* 普通成员 */
+    grey: (othersColor hideOthers),
 };
 for _, tagConfig in mapping {
     tagConfig[0] = alpha(tagConfig[0], boxShadowOpacity);
